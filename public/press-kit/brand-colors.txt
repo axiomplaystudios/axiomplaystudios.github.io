@@ -1,0 +1,9 @@
+Axiomplay Studios - Brand Colors
+
+Dark Base: #0b0d16
+Surface: #111427
+Accent Teal: #27e0a5
+Accent Blue: #4f7dff
+Accent Gold: #ffb347
+
+Gradient: linear-gradient(135deg, #27e0a5 0%, #4f7dff 55%, #ffb347 100%)

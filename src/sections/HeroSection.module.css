@@ -1,0 +1,126 @@
+.hero {
+  position: relative;
+  padding-top: 6rem;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 15% 20%, rgba(39, 224, 165, 0.15), transparent 35%),
+    radial-gradient(circle at 80% 0%, rgba(79, 125, 255, 0.18), transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(255, 179, 71, 0.18), transparent 45%);
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.grid {
+  position: relative;
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.copy h1 {
+  font-size: clamp(2.8rem, 6vw, 4.6rem);
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.brand {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.intro {
+  color: var(--color-muted);
+  font-size: 1.05rem;
+  max-width: 36rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.highlights span {
+  font-weight: 700;
+}
+
+.highlights p {
+  margin: 0.4rem 0 0;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.art {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.frame {
+  background: rgba(17, 20, 39, 0.85);
+  border-radius: 32px;
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+  display: grid;
+  gap: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.frame svg {
+  width: min(360px, 70vw);
+  height: auto;
+  margin: 0 auto;
+}
+
+.orb {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(39, 224, 165, 0.5), transparent 70%);
+  filter: blur(2px);
+  top: -60px;
+  right: 0;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.stats span {
+  font-weight: 700;
+  color: var(--color-text);
+  display: block;
+  font-size: 1.1rem;
+}
