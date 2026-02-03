@@ -10,12 +10,12 @@ export interface Game {
   title: string;
   description: string;
   status: GameStatus;
-  platforms: string[];
+  platforms: readonly string[];
   coverImage: string;
   storeLinks: GameStoreLinks;
   details: {
     summary: string;
-    features: string[];
+    features: readonly string[];
   };
 }
 

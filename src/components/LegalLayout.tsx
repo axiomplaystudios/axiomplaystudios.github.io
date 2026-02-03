@@ -9,7 +9,7 @@ interface LegalContent {
   title: string;
   lastUpdated: string;
   summary: string;
-  sections: LegalSection[];
+  sections: readonly LegalSection[];
 }
 
 interface LegalLayoutProps {

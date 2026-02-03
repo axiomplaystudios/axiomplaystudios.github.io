@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export const useScrollSpy = (sectionIds: string[], rootMargin = '-20% 0px -55% 0px') => {
+export const useScrollSpy = (sectionIds: readonly string[], rootMargin = '-20% 0px -55% 0px') => {
   const [activeId, setActiveId] = useState(sectionIds[0] ?? '');
 
   useEffect(() => {

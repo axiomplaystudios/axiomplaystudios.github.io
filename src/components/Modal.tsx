@@ -19,10 +19,11 @@ const Modal = ({ open, title, onClose, children }: ModalProps) => {
     }
 
     if (open && !dialog.open) {
-      if ('showModal' in dialog) {
-        dialog.showModal();
+      const dialogElement = dialog as HTMLDialogElement & { showModal?: () => void };
+      if (typeof dialogElement.showModal === 'function') {
+        dialogElement.showModal();
       } else {
-        dialog.setAttribute('open', '');
+        dialogElement.setAttribute('open', '');
       }
       document.body.style.overflow = 'hidden';
     }
