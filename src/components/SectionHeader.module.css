@@ -1,0 +1,27 @@
+.header {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.subtitle {
+  color: var(--color-muted);
+  max-width: 46rem;
+}
+
+.center {
+  text-align: center;
+  align-items: center;
+}
+
+.left {
+  text-align: left;
+}

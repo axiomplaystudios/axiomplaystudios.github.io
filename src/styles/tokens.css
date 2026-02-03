@@ -1,0 +1,12 @@
+:root {
+  --color-bg: #0b0d16;
+  --color-surface: #111427;
+  --color-surface-elevated: #151a32;
+  --color-text: #f4f6ff;
+  --color-muted: #a7b0c2;
+  --color-accent: #27e0a5;
+  --gradient-accent: linear-gradient(135deg, #27e0a5 0%, #4f7dff 55%, #ffb347 100%);
+  --font-sans: 'Segoe UI', 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  --section-padding: clamp(3.5rem, 6vw, 6.5rem);
+  --container-width: 1120px;
+}
