@@ -1,0 +1,78 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="WeighSnap hero visual">
+  <defs>
+    <linearGradient id="heroBg" x1="120" y1="70" x2="1410" y2="840" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#061022"/>
+      <stop offset="1" stop-color="#091933"/>
+    </linearGradient>
+    <radialGradient id="heroGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1260 130) rotate(122.6) scale(510 680)">
+      <stop stop-color="#4A8CFF" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#4A8CFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="phoneGlass" x1="810" y1="170" x2="810" y2="730" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111D34"/>
+      <stop offset="1" stop-color="#0D1628"/>
+    </linearGradient>
+    <linearGradient id="chartLine" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#8BD7FF"/>
+      <stop offset="1" stop-color="#4A8CFF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" rx="32" fill="url(#heroBg)"/>
+  <rect width="1600" height="900" rx="32" fill="url(#heroGlow)"/>
+  <g opacity="0.26" stroke="#4C6388" stroke-width="1">
+    <path d="M0 116H1600"/>
+    <path d="M0 232H1600"/>
+    <path d="M0 348H1600"/>
+    <path d="M0 464H1600"/>
+    <path d="M0 580H1600"/>
+    <path d="M0 696H1600"/>
+    <path d="M0 812H1600"/>
+    <path d="M190 0V900"/>
+    <path d="M380 0V900"/>
+    <path d="M570 0V900"/>
+    <path d="M760 0V900"/>
+    <path d="M950 0V900"/>
+    <path d="M1140 0V900"/>
+    <path d="M1330 0V900"/>
+  </g>
+
+  <g>
+    <rect x="126" y="172" width="550" height="556" rx="30" fill="#0D1628" stroke="#21365C"/>
+    <text x="182" y="268" fill="#EDF3FF" font-family="'Space Grotesk', 'Segoe UI', sans-serif" font-size="68" font-weight="700" letter-spacing="0.4">WeighSnap</text>
+    <text x="182" y="320" fill="#9FB2D1" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="30" font-weight="600">Track with clarity. Build real momentum.</text>
+    <rect x="182" y="396" width="268" height="66" rx="33" fill="#4A8CFF"/>
+    <text x="230" y="437" fill="#EDF3FF" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="26" font-weight="800">Play Store</text>
+    <rect x="468" y="396" width="152" height="66" rx="33" fill="#111D34" stroke="#2D4672"/>
+    <text x="500" y="437" fill="#9FB2D1" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="24" font-weight="700">Learn</text>
+
+    <rect x="182" y="506" width="430" height="146" rx="20" fill="#111D34"/>
+    <text x="212" y="553" fill="#9FB2D1" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="22" font-weight="700">Current trend</text>
+    <text x="212" y="607" fill="#EDF3FF" font-family="'Space Grotesk', 'Segoe UI', sans-serif" font-size="46" font-weight="700">-2.8 kg / 8 weeks</text>
+  </g>
+
+  <g>
+    <rect x="760" y="110" width="430" height="680" rx="54" fill="#040A14"/>
+    <rect x="782" y="136" width="386" height="628" rx="42" fill="url(#phoneGlass)" stroke="#243A62"/>
+    <rect x="907" y="156" width="130" height="10" rx="5" fill="#2A416A"/>
+    <text x="826" y="222" fill="#EDF3FF" font-family="'Space Grotesk', 'Segoe UI', sans-serif" font-size="38" font-weight="700">Progress</text>
+    <text x="830" y="264" fill="#9FB2D1" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="24" font-weight="600">Last 30 days</text>
+
+    <rect x="828" y="290" width="294" height="220" rx="20" fill="#0A1425" stroke="#263F67"/>
+    <path d="M858 450C890 430 912 446 942 414C971 382 995 390 1027 362C1057 334 1085 350 1110 332" stroke="url(#chartLine)" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="1110" cy="332" r="8" fill="#8BD7FF"/>
+
+    <rect x="828" y="534" width="136" height="140" rx="18" fill="#0A1425" stroke="#263F67"/>
+    <text x="858" y="584" fill="#9FB2D1" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="18" font-weight="700">Goal</text>
+    <text x="858" y="625" fill="#EDF3FF" font-family="'Space Grotesk', 'Segoe UI', sans-serif" font-size="36" font-weight="700">72</text>
+
+    <rect x="986" y="534" width="136" height="140" rx="18" fill="#0A1425" stroke="#263F67"/>
+    <text x="1016" y="584" fill="#9FB2D1" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="18" font-weight="700">Today</text>
+    <text x="1016" y="625" fill="#EDF3FF" font-family="'Space Grotesk', 'Segoe UI', sans-serif" font-size="36" font-weight="700">74</text>
+  </g>
+
+  <g opacity="0.9">
+    <circle cx="1348" cy="646" r="94" fill="#0F1D35"/>
+    <path d="M1303 650L1348 594L1392 650L1348 673L1303 650Z" fill="#8BD7FF"/>
+  </g>
+</svg>

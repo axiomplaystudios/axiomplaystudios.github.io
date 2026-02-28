@@ -5,8 +5,8 @@
 }
 
 .nav {
-  background: rgba(11, 13, 22, 0.75);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: color-mix(in srgb, var(--color-bg) 78%, transparent);
+  border-bottom: 1px solid var(--border);
   backdrop-filter: blur(18px);
 }
 
@@ -31,6 +31,12 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .link {
@@ -60,13 +66,37 @@
   background: var(--gradient-accent);
 }
 
+.themeButton {
+  height: 40px;
+  padding: 0 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--color-surface) 88%, transparent);
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: border-color 0.24s ease, transform 0.24s ease;
+}
+
+.themeButton:hover {
+  border-color: color-mix(in srgb, var(--color-accent) 50%, var(--border));
+}
+
+.themeButton:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+
 .menuButton {
   display: none;
   width: 44px;
   height: 44px;
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--color-surface) 86%, transparent);
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -77,12 +107,12 @@
 .menuButton span {
   width: 18px;
   height: 2px;
-  background: #f4f6ff;
+  background: var(--color-text);
   border-radius: 999px;
 }
 
 .menuButton:focus-visible {
-  outline: 2px solid var(--color-accent);
+  outline: 2px solid var(--focus);
   outline-offset: 3px;
 }
 
@@ -107,8 +137,8 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  background: radial-gradient(circle at top, rgba(39, 224, 165, 0.12), transparent 45%),
-    rgba(11, 13, 22, 0.98);
+  background: radial-gradient(circle at top, rgba(var(--glow), 0.14), transparent 45%),
+    color-mix(in srgb, var(--color-bg) 96%, transparent);
 }
 
 .mobileLink {
@@ -131,14 +161,36 @@
   justify-content: center;
   padding: 0.85rem 1.25rem;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--color-surface) 90%, transparent);
   color: var(--color-text);
   font-weight: 600;
 }
 
+.mobileThemeButton {
+  width: fit-content;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--color-surface) 90%, transparent);
+  color: var(--color-text);
+  padding: 0.72rem 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.75rem;
+}
+
+.mobileThemeButton:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+
 @media (max-width: 900px) {
   .links {
+    display: none;
+  }
+
+  .themeButton {
     display: none;
   }
 

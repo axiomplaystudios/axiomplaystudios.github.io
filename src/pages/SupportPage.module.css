@@ -1,0 +1,57 @@
+.layout {
+  display: grid;
+  gap: 1rem;
+}
+
+.header {
+  margin-bottom: 0.5rem;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  font-size: 0.76rem;
+}
+
+.header h1 {
+  margin: 0.4rem 0 0.6rem;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+}
+
+.header p {
+  margin: 0;
+  color: var(--color-muted);
+  max-width: 65ch;
+}
+
+.card {
+  padding: 1.15rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--color-surface) 92%, transparent);
+}
+
+.card h2 {
+  margin: 0 0 0.7rem;
+}
+
+.card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--color-muted);
+  display: grid;
+  gap: 0.45rem;
+}
+
+.email {
+  color: var(--color-text);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.email:hover {
+  color: var(--color-accent);
+}

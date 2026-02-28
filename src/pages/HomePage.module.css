@@ -1,0 +1,234 @@
+.hero {
+  padding-top: clamp(4rem, 8vw, 7rem);
+  position: relative;
+}
+
+.heroInner {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  align-items: center;
+  gap: clamp(1.4rem, 3.2vw, 3rem);
+}
+
+.heroCopy h1 {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.06;
+  max-width: 16ch;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  font-size: 0.78rem;
+}
+
+.lead {
+  margin: 0;
+  max-width: 60ch;
+  color: var(--color-muted);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.heroActions {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.heroVisual {
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: color-mix(in srgb, var(--color-surface) 92%, transparent);
+  padding: 1.2rem;
+  box-shadow: 0 24px 64px rgba(var(--glow), 0.25);
+  animation: float-card 8s ease-in-out infinite;
+}
+
+.heroVisual img {
+  width: 100%;
+  display: block;
+}
+
+.featuredTag {
+  margin: 0;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.studioBlock {
+  display: grid;
+  gap: 1rem;
+}
+
+.studioHeader h2 {
+  margin: 0.35rem 0 0.7rem;
+  font-size: clamp(1.5rem, 2.7vw, 2.2rem);
+}
+
+.studioHeader p:last-child {
+  margin: 0;
+  max-width: 66ch;
+  color: var(--color-muted);
+}
+
+.values {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.valueCard {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1rem;
+  background: color-mix(in srgb, var(--color-surface) 94%, transparent);
+  transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1), border-color 260ms ease;
+}
+
+.valueCard:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--color-accent) 56%, var(--border));
+}
+
+.valueCard h3 {
+  margin: 0 0 0.45rem;
+}
+
+.valueCard p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.projectsBlock {
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: color-mix(in srgb, var(--color-surface) 92%, transparent);
+  padding: clamp(1rem, 2.5vw, 1.7rem);
+}
+
+.projectsHeader h2 {
+  margin: 0.35rem 0 0.5rem;
+  font-size: clamp(1.45rem, 2.7vw, 2rem);
+}
+
+.projectsHeader p {
+  margin: 0;
+  color: var(--color-muted);
+  max-width: 72ch;
+}
+
+.projectGrid {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.projectCard {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1rem;
+  background: color-mix(in srgb, var(--color-surface) 94%, transparent);
+  transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1), border-color 260ms ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--color-accent) 56%, var(--border));
+}
+
+.projectTag {
+  margin: 0;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.projectCard h3 {
+  margin: 0.45rem 0 0.45rem;
+}
+
+.projectCard p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.projectCard a {
+  margin-top: 0.85rem;
+  display: inline-block;
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+.projectCard a:hover {
+  color: var(--color-accent);
+}
+
+.finalCta {
+  border-top: 1px solid var(--border);
+}
+
+.finalInner {
+  text-align: center;
+}
+
+.finalInner h2 {
+  margin: 0 0 0.45rem;
+  font-size: clamp(1.5rem, 3vw, 2.3rem);
+}
+
+.finalInner p {
+  margin: 0 0 1.2rem;
+  color: var(--color-muted);
+}
+
+@media (max-width: 980px) {
+  .heroInner {
+    grid-template-columns: 1fr;
+  }
+
+  .values {
+    grid-template-columns: 1fr;
+  }
+
+  .projectGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes float-card {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heroVisual {
+    animation: none;
+  }
+
+  .valueCard,
+  .projectCard {
+    transition: none;
+  }
+
+  .valueCard:hover,
+  .projectCard:hover {
+    transform: none;
+  }
+}

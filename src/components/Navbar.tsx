@@ -2,15 +2,19 @@ import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { siteContent } from '../content/siteContent';
 import { useScrollSpy } from '../hooks/useScrollSpy';
+import { useTheme } from '../hooks/useTheme';
 import Logo from './Logo';
+import ThemeToggle from './ThemeToggle';
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
-  const sectionIds = siteContent.nav.map((item) => item.id);
+  const hashNavItems = siteContent.nav.filter((item) => item.href.startsWith('#'));
+  const sectionIds = hashNavItems.map((item) => item.id);
   const activeSection = useScrollSpy(sectionIds);
   const isHome = location.pathname === '/';
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? 'hidden' : '';
@@ -40,12 +44,18 @@ const Navbar = () => {
 
           <div className={styles.links}>
             {siteContent.nav.map((item) => {
-              const isActive = isHome && activeSection === item.id;
+              const isHashLink = item.href.startsWith('#');
+              const isActive = isHashLink
+                ? isHome && activeSection === item.id
+                : location.pathname === item.href;
+              const destination = isHashLink ? { pathname: '/', hash: item.href } : item.href;
+
               return (
                 <Link
                   key={item.id}
                   className={`${styles.link} ${isActive ? styles.active : ''}`}
-                  to={{ pathname: '/', hash: item.href }}
+                  to={destination}
+                  onClick={() => setMenuOpen(false)}
                 >
                   {item.label}
                 </Link>
@@ -53,45 +63,66 @@ const Navbar = () => {
             })}
           </div>
 
-          <button
-            className={styles.menuButton}
-            type="button"
-            aria-label="Toggle navigation"
-            aria-expanded={menuOpen}
-            aria-controls="mobile-menu"
-            onClick={() => setMenuOpen((open) => !open)}
-          >
-            <span />
-            <span />
-          </button>
+          <div className={styles.controls}>
+            <ThemeToggle theme={theme} onToggle={toggleTheme} className={styles.themeButton} />
+            <button
+              className={styles.menuButton}
+              type="button"
+              aria-label="Toggle navigation"
+              aria-expanded={menuOpen}
+              aria-controls="mobile-menu"
+              onClick={() => setMenuOpen((open) => !open)}
+            >
+              <span />
+              <span />
+            </button>
+          </div>
         </div>
       </nav>
 
       <div
         id="mobile-menu"
         className={`${styles.mobileMenu} ${menuOpen ? styles.mobileOpen : ''}`}
-        onClick={() => setMenuOpen(false)}
+        role="button"
+        tabIndex={0}
+        aria-label="Close navigation menu"
+        onKeyDown={(event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            setMenuOpen(false);
+          }
+        }}
+        onClick={(event) => {
+          if (event.target === event.currentTarget) {
+            setMenuOpen(false);
+          }
+        }}
       >
-        <div className={styles.mobilePanel} onClick={(event) => event.stopPropagation()}>
-          {siteContent.nav.map((item) => (
-            <Link
-              key={item.id}
-              className={styles.mobileLink}
-              to={{ pathname: '/', hash: item.href }}
-              onClick={() => setMenuOpen(false)}
-            >
-              {item.label}
-            </Link>
-          ))}
+        <div className={styles.mobilePanel}>
+          {siteContent.nav.map((item) => {
+            const destination = item.href.startsWith('#') ? { pathname: '/', hash: item.href } : item.href;
+
+            return (
+              <Link
+                key={item.id}
+                className={styles.mobileLink}
+                to={destination}
+                onClick={() => setMenuOpen(false)}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
           <div className={styles.mobileMeta}>
             <p>Premium mobile experiences for Android and iOS.</p>
             <Link
               className={styles.mobileCta}
-              to={{ pathname: '/', hash: '#contact' }}
+              to="/projects/weighsnap"
               onClick={() => setMenuOpen(false)}
             >
-              Contact the studio
+              Explore WeighSnap
             </Link>
+            <ThemeToggle theme={theme} onToggle={toggleTheme} className={styles.mobileThemeButton} />
           </div>
         </div>
       </div>

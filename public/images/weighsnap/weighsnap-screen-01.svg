@@ -1,0 +1,25 @@
+<svg width="1080" height="1920" viewBox="0 0 1080 1920" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="WeighSnap screen dashboard">
+  <rect width="1080" height="1920" rx="120" fill="#071227"/>
+  <rect x="86" y="132" width="908" height="1656" rx="68" fill="#0D1628" stroke="#22395F" stroke-width="4"/>
+  <text x="150" y="252" fill="#EDF3FF" font-family="'Space Grotesk', 'Segoe UI', sans-serif" font-size="60" font-weight="700">Dashboard</text>
+  <text x="150" y="304" fill="#9FB2D1" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="34" font-weight="600">Week overview</text>
+
+  <rect x="150" y="360" width="780" height="250" rx="34" fill="#101D34"/>
+  <text x="204" y="444" fill="#9FB2D1" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="30" font-weight="700">Current trend</text>
+  <text x="204" y="530" fill="#EDF3FF" font-family="'Space Grotesk', 'Segoe UI', sans-serif" font-size="74" font-weight="700">-0.6 kg</text>
+
+  <rect x="150" y="656" width="780" height="460" rx="34" fill="#0A1425" stroke="#26406A" stroke-width="3"/>
+  <path d="M210 1000C258 950 306 980 354 914C400 852 445 882 490 812C534 748 576 766 624 702C674 640 730 670 790 590" stroke="#8BD7FF" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="790" cy="590" r="12" fill="#4A8CFF"/>
+
+  <rect x="150" y="1162" width="378" height="260" rx="28" fill="#101D34"/>
+  <text x="198" y="1248" fill="#9FB2D1" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="30" font-weight="700">Target</text>
+  <text x="198" y="1348" fill="#EDF3FF" font-family="'Space Grotesk', 'Segoe UI', sans-serif" font-size="88" font-weight="700">72</text>
+
+  <rect x="552" y="1162" width="378" height="260" rx="28" fill="#101D34"/>
+  <text x="600" y="1248" fill="#9FB2D1" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="30" font-weight="700">Today</text>
+  <text x="600" y="1348" fill="#EDF3FF" font-family="'Space Grotesk', 'Segoe UI', sans-serif" font-size="88" font-weight="700">74</text>
+
+  <rect x="150" y="1468" width="780" height="220" rx="28" fill="#4A8CFF"/>
+  <text x="400" y="1598" fill="#EDF3FF" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="42" font-weight="800">Log New Entry</text>
+</svg>

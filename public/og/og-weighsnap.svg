@@ -1,0 +1,48 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Axiomplay Studios and WeighSnap social preview">
+  <defs>
+    <linearGradient id="bgGrad" x1="74" y1="40" x2="1128" y2="606" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#050B17"/>
+      <stop offset="1" stop-color="#0D1D34"/>
+    </linearGradient>
+    <radialGradient id="bgGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1000 120) rotate(130) scale(410 510)">
+      <stop stop-color="#4A8CFF" stop-opacity="0.52"/>
+      <stop offset="1" stop-color="#4A8CFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="logoStroke" x1="20" y1="20" x2="108" y2="108" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4A8CFF"/>
+      <stop offset="1" stop-color="#8BD7FF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" rx="32" fill="url(#bgGrad)"/>
+  <rect width="1200" height="630" rx="32" fill="url(#bgGlow)"/>
+
+  <g transform="translate(84 86)">
+    <rect x="8" y="8" width="112" height="112" rx="30" fill="#050B17"/>
+    <rect x="20" y="20" width="88" height="88" rx="22" stroke="url(#logoStroke)" stroke-width="4"/>
+    <path d="M37 73L64 40L91 73L64 87L37 73Z" fill="#EDF3FF"/>
+    <circle cx="64" cy="64" r="8" fill="#4A8CFF"/>
+  </g>
+
+  <text x="238" y="156" fill="#EDF3FF" font-family="'Space Grotesk', 'Segoe UI', sans-serif" font-size="54" font-weight="700" letter-spacing="0.8">Axiomplay Studios</text>
+  <text x="90" y="260" fill="#8BD7FF" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="28" font-weight="700" letter-spacing="0.4">Featured Product</text>
+  <text x="90" y="332" fill="#EDF3FF" font-family="'Space Grotesk', 'Segoe UI', sans-serif" font-size="86" font-weight="700" letter-spacing="0.7">WeighSnap</text>
+  <text x="90" y="392" fill="#9FB2D1" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="34" font-weight="600">Track with clarity. Build real momentum.</text>
+
+  <rect x="90" y="446" width="322" height="84" rx="42" fill="#4A8CFF"/>
+  <text x="144" y="499" fill="#EDF3FF" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="34" font-weight="800">Play Store</text>
+
+  <g>
+    <rect x="726" y="94" width="312" height="482" rx="42" fill="#050B17"/>
+    <rect x="744" y="116" width="276" height="444" rx="32" fill="#0D1628" stroke="#28456F"/>
+    <text x="782" y="178" fill="#EDF3FF" font-family="'Space Grotesk', 'Segoe UI', sans-serif" font-size="30" font-weight="700">Progress</text>
+    <rect x="776" y="206" width="212" height="162" rx="18" fill="#101D34"/>
+    <path d="M798 344C819 325 838 334 858 312C877 290 896 295 916 276C937 255 955 262 972 245" stroke="#8BD7FF" stroke-width="6" stroke-linecap="round"/>
+    <rect x="776" y="390" width="98" height="130" rx="16" fill="#101D34"/>
+    <rect x="890" y="390" width="98" height="130" rx="16" fill="#101D34"/>
+    <text x="804" y="448" fill="#9FB2D1" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="16" font-weight="700">Goal</text>
+    <text x="806" y="488" fill="#EDF3FF" font-family="'Space Grotesk', 'Segoe UI', sans-serif" font-size="36" font-weight="700">72</text>
+    <text x="913" y="448" fill="#9FB2D1" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="16" font-weight="700">Now</text>
+    <text x="915" y="488" fill="#EDF3FF" font-family="'Space Grotesk', 'Segoe UI', sans-serif" font-size="36" font-weight="700">74</text>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg width="1080" height="1920" viewBox="0 0 1080 1920" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="WeighSnap screen insights">
+  <rect width="1080" height="1920" rx="120" fill="#071227"/>
+  <rect x="86" y="132" width="908" height="1656" rx="68" fill="#0D1628" stroke="#22395F" stroke-width="4"/>
+  <text x="150" y="252" fill="#EDF3FF" font-family="'Space Grotesk', 'Segoe UI', sans-serif" font-size="60" font-weight="700">Insights</text>
+  <text x="150" y="304" fill="#9FB2D1" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="34" font-weight="600">Monthly consistency</text>
+
+  <rect x="150" y="378" width="780" height="468" rx="34" fill="#0A1425" stroke="#26406A" stroke-width="3"/>
+  <path d="M216 744V470" stroke="#314F7D" stroke-width="2"/>
+  <path d="M338 744V526" stroke="#314F7D" stroke-width="2"/>
+  <path d="M460 744V612" stroke="#314F7D" stroke-width="2"/>
+  <path d="M582 744V566" stroke="#314F7D" stroke-width="2"/>
+  <path d="M704 744V482" stroke="#314F7D" stroke-width="2"/>
+  <path d="M826 744V436" stroke="#314F7D" stroke-width="2"/>
+  <path d="M216 744L338 690L460 720L582 674L704 628L826 584" stroke="#8BD7FF" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="826" cy="584" r="12" fill="#4A8CFF"/>
+
+  <rect x="150" y="896" width="780" height="240" rx="30" fill="#101D34"/>
+  <text x="204" y="980" fill="#9FB2D1" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="30" font-weight="700">Adherence score</text>
+  <text x="204" y="1080" fill="#EDF3FF" font-family="'Space Grotesk', 'Segoe UI', sans-serif" font-size="96" font-weight="700">92%</text>
+
+  <rect x="150" y="1188" width="780" height="500" rx="30" fill="#101D34"/>
+  <text x="204" y="1272" fill="#9FB2D1" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="30" font-weight="700">Highlights</text>
+  <text x="204" y="1360" fill="#EDF3FF" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="38" font-weight="700">24 entries in the last 30 days</text>
+  <text x="204" y="1438" fill="#EDF3FF" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="38" font-weight="700">Average trend improving steadily</text>
+  <text x="204" y="1516" fill="#EDF3FF" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="38" font-weight="700">Best streak: 11 consecutive days</text>
+</svg>

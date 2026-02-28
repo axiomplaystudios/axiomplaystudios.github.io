@@ -47,11 +47,6 @@ const Modal = ({ open, title, onClose, children }: ModalProps) => {
         event.preventDefault();
         onClose();
       }}
-      onClick={(event) => {
-        if (event.target === event.currentTarget) {
-          onClose();
-        }
-      }}
     >
       <div className={styles.content}>
         <header className={styles.header}>

@@ -10,6 +10,8 @@ import HomePage from './pages/HomePage';
 
 const PrivacyPage = lazy(() => import('./pages/PrivacyPage'));
 const TermsPage = lazy(() => import('./pages/TermsPage'));
+const SupportPage = lazy(() => import('./pages/SupportPage'));
+const ProjectPage = lazy(() => import('./pages/ProjectPage'));
 
 const LoadingFallback = () => (
   <div className="section">
@@ -30,6 +32,8 @@ const App = () => (
       <Suspense fallback={<LoadingFallback />}>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/projects/:projectId" element={<ProjectPage />} />
+          <Route path="/support" element={<SupportPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/terms" element={<TermsPage />} />
         </Routes>

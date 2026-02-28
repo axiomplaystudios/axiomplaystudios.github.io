@@ -1,0 +1,19 @@
+Axiomplay Studios Brand Colors
+
+Dark Theme
+- Background: #050B17
+- Surface: #0D1628
+- Surface Elevated: #111D34
+- Text Primary: #EDF3FF
+- Text Secondary: #9FB2D1
+- Accent: #4A8CFF
+- Accent Soft: #8BD7FF
+
+Light Theme
+- Background: #EFF5FF
+- Surface: #FFFFFF
+- Surface Elevated: #F7FAFF
+- Text Primary: #091A34
+- Text Secondary: #4C6388
+- Accent: #285FE3
+- Accent Soft: #49A3FF

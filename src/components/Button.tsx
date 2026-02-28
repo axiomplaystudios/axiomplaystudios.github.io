@@ -19,7 +19,10 @@ export const Button = ({
 export const ButtonLink = ({
   variant = 'primary',
   className,
+  children,
   ...props
 }: BaseProps & AnchorHTMLAttributes<HTMLAnchorElement>) => (
-  <a className={`${styles.button} ${styles[variant]} ${className ?? ''}`} {...props} />
+  <a className={`${styles.button} ${styles[variant]} ${className ?? ''}`} {...props}>
+    {children}
+  </a>
 );

@@ -19,159 +19,230 @@ export interface Game {
   };
 }
 
+export interface ProjectFeature {
+  title: string;
+  description: string;
+}
+
+export interface ProjectFaq {
+  question: string;
+  answer: string;
+}
+
+export interface ProjectChangelogItem {
+  version: string;
+  date: string;
+  highlights: readonly string[];
+}
+
+export interface Project {
+  id: string;
+  slug: string;
+  name: string;
+  tag: string;
+  oneLiner: string;
+  overview: string;
+  playStoreUrl: string;
+  heroImage: string;
+  screenshots: readonly string[];
+  walkthroughVideoUrl?: string;
+  features: readonly ProjectFeature[];
+  faq: readonly ProjectFaq[];
+  changelog: readonly ProjectChangelogItem[];
+  supportEmail: string;
+  reviewQuote?: {
+    quote: string;
+    source: string;
+  };
+}
+
 export const siteContent = {
   brand: {
     name: 'Axiomplay Studios',
-    tagline: 'Small studio. Big worlds.',
+    tagline: 'Precision-built digital experiences.',
     intro:
-      'We craft premium Android and iOS games with tactile controls, crisp visuals, and low-latency performance. Our small team obsesses over the feel of every tap and swipe, so each release is fast, accessible, and deeply polished.'
+      'Axiomplay Studios designs focused mobile products where speed, clarity, and visual craft work together. We keep the studio front page intentionally high-level, with deep product information inside dedicated project pages.'
   },
   announcement: {
-    enabled: true,
-    label: 'Now prototyping a new roguelike-lite.',
+    enabled: false,
+    label: '',
     link: {
-      text: 'See the studio timeline',
-      href: '#studio'
+      text: '',
+      href: '#home'
     }
   },
   nav: [
     { id: 'home', label: 'Home', href: '#home' },
-    { id: 'games', label: 'Games', href: '#games' },
+    { id: 'projects', label: 'Projects', href: '#projects' },
     { id: 'studio', label: 'Studio', href: '#studio' },
-    { id: 'press', label: 'Press Kit', href: '#press' },
-    { id: 'contact', label: 'Contact', href: '#contact' }
+    { id: 'support', label: 'Support', href: '/support' },
+    { id: 'legal', label: 'Legal', href: '/privacy' }
   ],
   hero: {
-    primaryCta: { label: 'View Games', href: '#games' },
-    secondaryCta: { label: 'Contact', href: '#contact' }
+    primaryCta: {
+      label: 'Download on Play Store',
+      href: 'https://play.google.com/store/apps/details?id=com.axiomplay.weighsnap'
+    },
+    secondaryCta: { label: 'Explore WeighSnap', href: '/projects/weighsnap' }
   },
-  games: {
-    title: 'Games built for modern mobile.',
-    subtitle: 'Tight feedback loops, clear readability, and performance tuned for a wide range of devices.',
+  projects: {
+    featuredId: 'weighsnap',
     list: [
       {
-        id: 'lumen-loom',
-        title: 'Lumen Loom',
-        description: 'A calming puzzle of weaving light across shifting tiles in bite-sized sessions.',
+        id: 'weighsnap',
+        slug: 'weighsnap',
+        name: 'WeighSnap',
+        tag: 'Health and Wellness',
+        oneLiner: 'Track weight trends in seconds with a clean, calm, and focused workflow.',
+        overview:
+          'WeighSnap helps people build consistency with simple weight logging, trend clarity, and progress visibility that stays useful over time. The interface is intentionally minimal so users can log fast and stay focused on habits, not friction.',
+        playStoreUrl: 'https://play.google.com/store/apps/details?id=com.axiomplay.weighsnap',
+        heroImage: '/images/weighsnap/weighsnap-hero.svg',
+        screenshots: [
+          '/images/weighsnap/weighsnap-screen-01.svg',
+          '/images/weighsnap/weighsnap-screen-02.svg',
+          '/images/weighsnap/weighsnap-screen-03.svg'
+        ],
+        walkthroughVideoUrl: '',
+        features: [
+          {
+            title: 'Fast daily check-ins',
+            description: 'Log your entry quickly and return to your day without unnecessary steps.'
+          },
+          {
+            title: 'Trend-first insights',
+            description:
+              'See progress direction across weeks and months so normal short-term noise does not distract you.'
+          },
+          {
+            title: 'Calm and readable UI',
+            description:
+              'A focused interface designed to reduce cognitive load and keep habit tracking sustainable.'
+          }
+        ],
+        faq: [
+          {
+            question: 'Is WeighSnap free to use?',
+            answer: 'Yes. Core tracking is available without a paid plan.'
+          },
+          {
+            question: 'Can I use WeighSnap every day?',
+            answer:
+              'Yes. It is built for quick daily logging and long-term consistency without complex setup.'
+          },
+          {
+            question: 'How do I contact support?',
+            answer: 'Use support@axiomplaystudios.com and include your device model and app version.'
+          }
+        ],
+        changelog: [
+          {
+            version: 'v1.2.0',
+            date: 'February 20, 2026',
+            highlights: [
+              'Improved chart readability on smaller Android devices',
+              'Faster app startup on low-memory phones',
+              'Refined onboarding copy for first-time users'
+            ]
+          },
+          {
+            version: 'v1.1.0',
+            date: 'January 10, 2026',
+            highlights: [
+              'Added streak-friendly reminders',
+              'Improved trend smoothing for weekly view'
+            ]
+          }
+        ],
+        supportEmail: 'support@axiomplaystudios.com',
+        reviewQuote: {
+          quote: 'Simple, fast, and exactly what daily tracking should feel like.',
+          source: 'Early user feedback'
+        }
+      }
+    ] as const satisfies readonly Project[]
+  },
+  games: {
+    title: 'Featured product',
+    subtitle: 'One focused app, built with long-term usability in mind.',
+    list: [
+      {
+        id: 'weighsnap',
+        title: 'WeighSnap',
+        description: 'Weight tracking that is quick to use, clear to read, and easy to stick with.',
         status: 'Released',
-        platforms: ['Android', 'iOS'],
-        coverImage: '/images/games/lumen-loom.svg',
+        platforms: ['Android'],
+        coverImage: '/images/weighsnap/weighsnap-hero.svg',
         storeLinks: {
-          googlePlay: 'https://play.google.com/store',
-          appStore: 'https://www.apple.com/app-store/'
+          googlePlay: 'https://play.google.com/store/apps/details?id=com.axiomplay.weighsnap'
         },
         details: {
           summary:
-            'Solve elegant light puzzles that scale in complexity while staying friendly to casual players.',
+            'WeighSnap is designed for habit consistency with rapid logging, calm visuals, and trend-focused progress tracking.',
           features: [
-            'Daily challenges with curated layouts',
-            'Offline play with low battery usage',
-            'Accessibility-first color modes'
-          ]
-        }
-      },
-      {
-        id: 'neon-runshift',
-        title: 'Neon Runshift',
-        description: 'High-speed arcade dodging with combo chains, perfect for quick bursts.',
-        status: 'In Development',
-        platforms: ['Android', 'iOS'],
-        coverImage: '/images/games/neon-runshift.svg',
-        storeLinks: {},
-        details: {
-          summary:
-            'An arcade racer-meets-dodger where precision timing and flow state build massive scores.',
-          features: [
-            'Dynamic obstacle lanes with adaptive difficulty',
-            'One-thumb controls tuned for mobile ergonomics',
-            'Seasonal scoreboards and unlockable trails'
-          ]
-        }
-      },
-      {
-        id: 'emberline-tactics',
-        title: 'Emberline Tactics',
-        description: 'A narrative roguelike-lite where every run reshapes the story map.',
-        status: 'Prototype',
-        platforms: ['Android', 'iOS'],
-        coverImage: '/images/games/emberline-tactics.svg',
-        storeLinks: {},
-        details: {
-          summary:
-            'Build a squad, forge alliances, and decide how the city evolves across interconnected runs.',
-          features: [
-            'Branching story nodes with persistent consequences',
-            'Strategic combat tuned for short sessions',
-            'Meta upgrades that respect player time'
+            'Daily logging flow optimized for speed',
+            'Readable charts that focus on trend direction',
+            'Minimal interface that avoids distraction'
           ]
         }
       }
-    ]
+    ] as const satisfies readonly Game[]
   },
   studio: {
-    title: 'The studio behind the polish.',
+    title: 'Craft over noise.',
     mission:
-      'Axiomplay Studios exists to make mobile games feel premium and effortless. We focus on responsiveness, stability, and player-first systems that reward curiosity and mastery.',
+      'Axiomplay Studios builds focused mobile products that feel premium through precision, restraint, and long-term reliability.',
     values: [
       {
-        title: 'Performance',
-        description: 'Stable frame rates, tight input, and battery-friendly builds.'
+        title: 'Clarity',
+        description: 'Every screen is designed for instant comprehension and calm flow.'
       },
       {
-        title: 'Player-first design',
-        description: 'Every mechanic is tuned for clarity, comfort, and joy.'
+        title: 'Consistency',
+        description: 'Interactions and visuals stay coherent across every feature.'
       },
       {
-        title: 'Fast iteration',
-        description: 'We ship prototypes quickly and refine based on real play.'
-      },
-      {
-        title: 'Accessibility',
-        description: 'Multiple control modes, readable UI, and inclusive defaults.'
+        title: 'Reliability',
+        description: 'Performance and stability are treated as product features.'
       }
     ],
     timeline: [
       {
         year: '2022',
-        title: 'Studio founded',
-        description: 'A small remote team formed around mobile-first craftsmanship.'
+        title: 'Studio formed',
+        description: 'Axiomplay began with a product-first approach for mobile experiences.'
       },
       {
-        year: '2023',
-        title: 'First public prototype',
-        description: 'Early puzzle concepts tested with a small community.'
-      },
-      {
-        year: '2024',
-        title: 'Pipeline upgrade',
-        description: 'New tooling for faster iteration, QA, and performance profiling.'
+        year: '2025',
+        title: 'WeighSnap launched',
+        description: 'First public release focused on frictionless weight tracking.'
       },
       {
         year: '2026',
-        title: 'New narrative IP',
-        description: 'Expanding into story-driven roguelike-lite experiences.'
+        title: 'Refinement phase',
+        description: 'Shipping iterative quality updates based on real user behavior.'
       }
     ]
   },
   pressKit: {
     title: 'Press kit',
     subtitle: 'Download approved assets and brand references for coverage and partnerships.',
-    brandColors: ['#0b0d16', '#111427', '#27e0a5', '#4f7dff', '#ffb347'],
+    brandColors: ['#0b1220', '#111a2e', '#2c6bff', '#61c7ff', '#f5f8ff'],
     downloads: [
       {
-        title: 'Logo pack (SVG + PNG)',
-        description: 'Primary lockup and monochrome mark.',
-        href: '/press-kit/logo-pack.zip'
+        title: 'Brand logo lockup',
+        description: 'Primary horizontal logo lockup.',
+        href: '/brand/logo-lockup-dark.svg'
       },
       {
         title: 'Brand colors',
-        description: 'Hex values and usage notes.',
-        href: '/press-kit/brand-colors.txt'
+        description: 'Current palette and token mapping.',
+        href: '/brand/brand-colors.txt'
       },
       {
-        title: 'Studio screenshots',
-        description: 'High-resolution placeholders for mockups.',
-        href: '/press-kit/screenshots.zip'
+        title: 'WeighSnap hero visual',
+        description: 'Hero artwork for media and previews.',
+        href: '/images/weighsnap/weighsnap-hero.svg'
       }
     ],
     usageGuidelines: [
@@ -181,62 +252,71 @@ export const siteContent = {
     ],
     pressContact: 'press@axiomplaystudios.com'
   },
+  support: {
+    title: 'Support',
+    subtitle: 'Need help with WeighSnap? We respond quickly with practical guidance.',
+    email: 'support@axiomplaystudios.com',
+    faq: [
+      'Include your Android version and app version in your message.',
+      'For billing issues, include your Play Store order details.',
+      'For bugs, include reproducible steps and screenshots when possible.'
+    ]
+  },
   contact: {
-    title: 'Let us build something together.',
-    subtitle:
-      'For partnerships, publishing, or collaboration opportunities, reach out and we will respond quickly.',
+    title: 'Let us build something focused.',
+    subtitle: 'For press, partnerships, or studio inquiries, contact us anytime.',
     email: 'hello@axiomplaystudios.com',
     socials: [
       { label: 'X / Twitter', href: 'https://twitter.com' },
       { label: 'YouTube', href: 'https://www.youtube.com' },
       { label: 'Discord', href: 'https://discord.com' },
-      { label: 'LinkedIn', href: 'https://www.linkedin.com' }
+      { label: 'GitHub', href: 'https://github.com' }
     ]
   },
   legal: {
     privacy: {
       title: 'Privacy Policy',
-      lastUpdated: 'February 3, 2026',
+      lastUpdated: 'February 28, 2026',
       summary:
-        'This policy explains how Axiomplay Studios collects, uses, and protects information when you interact with our games and website.',
+        'This policy explains how Axiomplay Studios collects, uses, and protects information when you interact with WeighSnap and our website.',
       sections: [
         {
           heading: 'Information we collect',
           body:
-            'We collect only the data needed to operate our games and website, such as gameplay analytics, device identifiers, and basic contact information you provide voluntarily.'
+            'We collect only data required to operate WeighSnap and this website, such as app usage analytics, device identifiers, and support information that you provide voluntarily.'
         },
         {
           heading: 'How we use data',
           body:
-            'Data is used to improve gameplay, troubleshoot issues, and communicate with players about updates or support requests.'
+            'Data is used to improve app quality, resolve issues, and respond to support requests.'
         },
         {
           heading: 'Your choices',
           body:
-            'You can opt out of non-essential analytics where supported, and request deletion of support emails at any time.'
+            'You can request support-data deletion and opt out of non-essential analytics where available.'
         }
       ]
     },
     terms: {
       title: 'Terms of Service',
-      lastUpdated: 'February 3, 2026',
+      lastUpdated: 'February 28, 2026',
       summary:
-        'These terms cover your use of Axiomplay Studios games and services. They are not legal advice and may be updated as we expand our offerings.',
+        'These terms cover your use of WeighSnap and Axiomplay Studios web properties. Terms may be updated as products evolve.',
       sections: [
         {
           heading: 'Acceptable use',
           body:
-            'You agree not to misuse our services, reverse engineer our games, or disrupt the experience for other players.'
+            'You agree not to misuse the service, reverse engineer application binaries, or disrupt service availability.'
         },
         {
-          heading: 'Game content',
+          heading: 'Content ownership',
           body:
-            'All game content remains the property of Axiomplay Studios. Purchases grant a personal, non-transferable license to access content.'
+            'All brand and app materials remain the property of Axiomplay Studios. Usage is limited to personal, non-transferable access.'
         },
         {
-          heading: 'Updates and availability',
+          heading: 'Service updates',
           body:
-            'We may update, modify, or discontinue features to maintain quality and security. We will aim to notify players about major changes.'
+            'We may modify or discontinue features in order to improve reliability, security, or product quality.'
         }
       ]
     }
@@ -244,6 +324,22 @@ export const siteContent = {
   footer: {
     copyright: `Copyright ${new Date().getFullYear()} Axiomplay Studios. All rights reserved.`,
     privacyHref: '/privacy',
-    termsHref: '/terms'
+    termsHref: '/terms',
+    studioLinks: [
+      { label: 'About', href: '#studio' },
+      { label: 'WeighSnap', href: '/projects/weighsnap' },
+      { label: 'Support', href: '/support' }
+    ],
+    legalLinks: [
+      { label: 'Privacy Policy', href: '/privacy' },
+      { label: 'Terms of Service', href: '/terms' },
+      { label: 'Cookie Policy', href: '/privacy' }
+    ],
+    connectLinks: [
+      { label: 'Twitter', href: 'https://twitter.com' },
+      { label: 'YouTube', href: 'https://www.youtube.com' },
+      { label: 'Discord', href: 'https://discord.com' },
+      { label: 'Email', href: 'mailto:hello@axiomplaystudios.com' }
+    ]
   }
 } as const;

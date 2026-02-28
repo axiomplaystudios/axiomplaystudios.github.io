@@ -11,7 +11,7 @@ const GamesSection = () => {
   const [activeGame, setActiveGame] = useState<Game | null>(null);
 
   return (
-    <section id="games" className="section">
+    <section id="weighsnap" className="section">
       <div className="container">
         <SectionHeader title={siteContent.games.title} subtitle={siteContent.games.subtitle} />
         <div className={styles.grid}>

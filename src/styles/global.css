@@ -8,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  background: var(--color-bg);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -19,9 +20,13 @@ html {
 body {
   margin: 0;
   font-family: var(--font-sans);
-  background: var(--color-bg);
+  background:
+    radial-gradient(1200px circle at 10% -10%, rgba(var(--glow), 0.16), transparent 42%),
+    radial-gradient(700px circle at 90% 0%, rgba(var(--glow), 0.08), transparent 48%),
+    var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
+  transition: background-color 260ms ease, color 220ms ease;
 }
 
 a {
@@ -36,6 +41,16 @@ a:focus-visible {
 
 img {
   max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  letter-spacing: 0.01em;
 }
 
 button,
@@ -56,20 +71,45 @@ textarea {
 
 .reveal {
   opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: translateY(18px) scale(0.992);
+  filter: blur(3px);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.7s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .reveal.is-visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+#main-content {
+  animation: page-enter 600ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .reveal {
     opacity: 1;
     transform: none;
+    filter: none;
     transition: none;
+  }
+
+  #main-content {
+    animation: none;
   }
 }
 

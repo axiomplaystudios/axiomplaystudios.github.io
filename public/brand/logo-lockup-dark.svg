@@ -1,0 +1,21 @@
+<svg width="760" height="168" viewBox="0 0 760 168" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Axiomplay Studios logo lockup dark">
+  <rect width="760" height="168" rx="24" fill="#050B17"/>
+  <g transform="translate(20 20)">
+    <defs>
+      <linearGradient id="lockupStroke" x1="20" y1="20" x2="108" y2="108" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#4A8CFF"/>
+        <stop offset="1" stop-color="#8BD7FF"/>
+      </linearGradient>
+      <linearGradient id="lockupCore" x1="40" y1="28" x2="89" y2="101" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#EFF5FF"/>
+        <stop offset="1" stop-color="#9FB2D1"/>
+      </linearGradient>
+    </defs>
+    <rect x="8" y="8" width="112" height="112" rx="30" fill="#050B17"/>
+    <rect x="20" y="20" width="88" height="88" rx="22" stroke="url(#lockupStroke)" stroke-width="4"/>
+    <path d="M37 73L64 40L91 73L64 87L37 73Z" fill="url(#lockupCore)"/>
+    <circle cx="64" cy="64" r="8" fill="#4A8CFF"/>
+  </g>
+  <text x="165" y="88" fill="#EDF3FF" font-family="'Space Grotesk', 'Segoe UI', sans-serif" font-size="52" font-weight="700" letter-spacing="0.8">Axiomplay Studios</text>
+  <text x="167" y="119" fill="#9FB2D1" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="20" font-weight="600" letter-spacing="0.4">Precision-built digital experiences</text>
+</svg>
