@@ -16,7 +16,7 @@ We collect data you provide, data required for optional features you enable, and
 ### A. Data you enter in the app
 - Weight entries (value, unit, timestamp) and optional notes.
 - Profile details and preferences you choose to provide, such as name/nickname, age, sex/gender, height, current and goal weight, activity level, and body measurements (for example, waist/hip/neck circumference).
-- Profile photo (optional). If you choose a photo from your device, the image is cropped and stored locally in the app's private storage for display. It is not uploaded or shared unless you export or back up your device separately.
+- Profile photo (optional). If you choose a photo from your device, the image is cropped and stored locally in the app's private storage for display. If you use backups, the backup includes only metadata that references the photo; the image file itself is not included.
 - Settings and preferences (units, themes, reminders, onboarding status, and app security settings).
 
 ### B. Health platform data (optional, Android)
@@ -25,7 +25,7 @@ If you enable health data sync, the app can read and/or write weight records usi
 ### C. Cloud backup data (optional)
 If you enable Google Drive backup and sign in with Google, the app:
 - Receives your Google account email address to show your sign-in status.
-- Creates a backup file containing your profiles, weight entries, and preferences.
+- Creates a backup file containing your profiles, weight entries, profile settings, and a limited allowlist of app-level preferences used to restore your app experience.
 - Stores the backup in your Google Drive app data folder (appDataFolder).
 
 ### D. Purchases (optional)
@@ -39,7 +39,7 @@ WeighSnap uses the Google Mobile Ads SDK and Google's User Messaging Platform (U
 - Diagnostics and performance data related to ads.
 - Consent status/choices used to determine ad personalization where required by law.
 
-We only request ads after consent where required. If you purchase Remove Ads, the app skips initializing the Mobile Ads SDK.
+We present a consent form where required by law. Consent choices may be limited by the consent form configuration. If you purchase Remove Ads, the app skips initializing the Mobile Ads SDK.
 
 ### F. Analytics, crash, and performance data (Firebase)
 On Android release builds only, WeighSnap uses Firebase Analytics, Crashlytics, and Performance. Collection is disabled in debug and test builds and on non-Android platforms. These services may collect:
@@ -65,8 +65,8 @@ We store in-app feedback in a Cloud Firestore (Google) collection named `feedbac
 ### H. Permissions you may grant
 - Notifications: for reminders you schedule in the app (local notifications only).
 - Health data (Android): for optional Health Connect sync.
-- Storage/files: for export or import of your data.
-- Photos/media: to select a profile photo (optional).
+- Files (import/export): we use the system file picker to let you choose CSV files or save exports; the app only accesses the files you select.
+- Photos/media: we use the system photo picker to let you select an optional profile photo; the app only accesses the photo you select.
 - Biometrics (optional): for app lock. Biometric data is handled by the operating system; we only receive a success/failure result.
 - Advertising ID (Android): used by the ad SDK if ads are enabled.
 
@@ -93,10 +93,7 @@ We do not sell your personal information. We only share data with third parties 
 These providers process data under their own privacy policies. We recommend reviewing them.
 
 ## 6. Legal Bases (GDPR/UK)
-If you are in the EEA, UK, or Switzerland, we process your data under the following legal bases:
-- Contract: to provide core app functionality (tracking, charts, and insights).
-- Consent: for optional features such as Health Connect sync, Google Drive backup, ad personalization (where required), and analytics/crash/performance collection on Android release builds.
-- Legitimate interests: to maintain app security, prevent fraud, and improve reliability (limited diagnostics and performance data).
+If you are in the EEA, UK, or Switzerland, we process your data under legal bases that may include contract necessity, legitimate interests, and consent depending on the feature and jurisdiction. We aim to align our processing with applicable law.
 
 ## 7. Your Choices and Controls
 - Use the app to add, edit, or delete entries and profiles.
@@ -104,7 +101,7 @@ If you are in the EEA, UK, or Switzerland, we process your data under the follow
 - If you wrote data to Health Connect, you may need to delete it there; the app may not be able to remove health records from that platform.
 - Sign out of Google and delete your backup from Google Drive.
 - Export your data to CSV and store or share it as you choose.
-- Control ad personalization in the consent flow or your device settings, reset the advertising ID, or remove ads via the in-app purchase.
+- Control ad personalization through your device settings, reset the advertising ID, or remove ads via the in-app purchase.
 - Analytics and diagnostic data collection is enabled only in Android release builds.
 - Contact us to request access, correction, or deletion of data (see Section 14).
 
@@ -114,7 +111,8 @@ Depending on where you live, you may also have additional rights (such as the ri
 - Local data stays on your device until you delete it or uninstall the app.
 - Google Drive backups remain until you delete them in the app or in Google Drive.
 - Analytics, crash, and performance data are retained by Google under their own retention policies.
-- Feedback submissions are retained only as long as needed to respond to your request and to comply with legal obligations; you can request deletion (see Section 14).
+- Feedback submissions are stored in Firestore and retained according to our operational and legal needs; you can request deletion (see Section 14).
+- Purchase records, ad measurement data, and consent logs may be retained by their respective providers (Google Play Billing, Google Mobile Ads/UMP) under their policies.
 
 ## 9. Security
 We use reasonable safeguards to protect data, including secure storage for PIN hashes and encrypted network connections for data sent over the internet. No method of storage or transmission is 100% secure.
@@ -126,23 +124,24 @@ WeighSnap is not intended for children, and the minimum age to use the app is 13
 Your data may be processed in countries other than your own when using third-party services (for example, Google). Those providers handle data under their own security and compliance frameworks.
 
 ## 12. Third-Party Links
-The app may include links to third-party services. We are not responsible for their privacy practices.
+The app does not currently include third-party links. If we add them, those services will have their own privacy practices.
 
 ## 13. Changes to This Policy
-We may update this policy from time to time. If changes are material, we will notify you in the app and update the "Last updated" date.
+We may update this policy from time to time. We will update the "Last updated" date, and may provide additional notice if required by law.
 
 ## 14. Contact and Requests
 To request access, correction, or deletion of your data, contact us at:
 axiomplaystudios@gmail.com
 
 ## 15. California Privacy Rights (CCPA/CPRA)
-If you are a California resident, you have the right to know, access, delete, and correct your personal information, and to opt out of the sale or sharing of personal information. We do not sell or share your personal information as defined by California law. If you wish to exercise your rights, contact us at the email above.
+If you are a California resident, you have the right to know, access, delete, and correct your personal information, and to opt out of the sale or sharing of personal information. We may share personal information with service providers and partners to operate the app as described in this policy. If you wish to exercise your rights, contact us at the email above.
 
 We may collect the following categories of personal information:
 - Identifiers (for example, device identifiers used for ads and analytics, and your Google account email if you enable Google Drive backup).
 - Internet or network activity information (app usage events on Android release builds).
 - Geolocation (approximate, inferred from IP for ad delivery).
 - Sensitive personal information (health data you enter or sync).
+- Customer service communications (feedback message, optional email, and related context).
 
 We use this information only for the purposes described in this policy and to provide the optional features you enable.
 
