@@ -47,6 +47,9 @@ const ProjectPage = () => {
               <ButtonLink href={`/projects/${project.slug}/privacy`} variant="secondary">
                 Privacy Policy
               </ButtonLink>
+              <ButtonLink href={`/projects/${project.slug}/terms`} variant="secondary">
+                Terms of Service
+              </ButtonLink>
             </div>
           </div>
           <div className={styles.heroMedia}>
@@ -155,7 +158,7 @@ const ProjectPage = () => {
             <a href={`mailto:${project.supportEmail}`}>{project.supportEmail}</a>
             <Link to="/support">Support page</Link>
             <Link to={`/projects/${project.slug}/privacy`}>Privacy policy</Link>
-            <Link to="/terms">Terms of service</Link>
+            <Link to={`/projects/${project.slug}/terms`}>Terms of service</Link>
           </div>
         </div>
       </section>

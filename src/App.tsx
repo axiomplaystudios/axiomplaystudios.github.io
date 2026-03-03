@@ -9,7 +9,7 @@ import SkipLink from './components/SkipLink';
 import HomePage from './pages/HomePage';
 
 const AppPrivacyPage = lazy(() => import('./pages/AppPrivacyPage'));
-const TermsPage = lazy(() => import('./pages/TermsPage'));
+const AppTermsPage = lazy(() => import('./pages/AppTermsPage'));
 const SupportPage = lazy(() => import('./pages/SupportPage'));
 const ProjectPage = lazy(() => import('./pages/ProjectPage'));
 
@@ -34,10 +34,12 @@ const App = () => (
           <Route path="/" element={<HomePage />} />
           <Route path="/projects/:projectId" element={<ProjectPage />} />
           <Route path="/projects/:projectId/privacy" element={<AppPrivacyPage />} />
+          <Route path="/projects/:projectId/terms" element={<AppTermsPage />} />
           <Route path="/support" element={<SupportPage />} />
           <Route path="/privacy" element={<AppPrivacyPage />} />
           <Route path="/legal/:app/privacy" element={<AppPrivacyPage />} />
-          <Route path="/terms" element={<TermsPage />} />
+          <Route path="/terms" element={<AppTermsPage />} />
+          <Route path="/legal/:app/terms" element={<AppTermsPage />} />
         </Routes>
       </Suspense>
     </main>

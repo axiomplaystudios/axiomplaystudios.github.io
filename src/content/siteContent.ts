@@ -324,7 +324,7 @@ export const siteContent = {
   footer: {
     copyright: `Copyright ${new Date().getFullYear()} Axiomplay Studios. All rights reserved.`,
     privacyHref: '/projects/weighsnap/privacy',
-    termsHref: '/terms',
+    termsHref: '/projects/weighsnap/terms',
     studioLinks: [
       { label: 'About', href: '#studio' },
       { label: 'WeighSnap', href: '/projects/weighsnap' },
@@ -332,7 +332,7 @@ export const siteContent = {
     ],
     legalLinks: [
       { label: 'WeighSnap Privacy Policy', href: '/projects/weighsnap/privacy' },
-      { label: 'Terms of Service', href: '/terms' },
+      { label: 'WeighSnap Terms of Service', href: '/projects/weighsnap/terms' },
       { label: 'Cookie Policy', href: '/projects/weighsnap/privacy' }
     ],
     connectLinks: [
