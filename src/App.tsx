@@ -8,7 +8,7 @@ import ScrollToTop from './components/ScrollToTop';
 import SkipLink from './components/SkipLink';
 import HomePage from './pages/HomePage';
 
-const PrivacyPage = lazy(() => import('./pages/PrivacyPage'));
+const AppPrivacyPage = lazy(() => import('./pages/AppPrivacyPage'));
 const TermsPage = lazy(() => import('./pages/TermsPage'));
 const SupportPage = lazy(() => import('./pages/SupportPage'));
 const ProjectPage = lazy(() => import('./pages/ProjectPage'));
@@ -33,8 +33,10 @@ const App = () => (
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/projects/:projectId" element={<ProjectPage />} />
+          <Route path="/projects/:projectId/privacy" element={<AppPrivacyPage />} />
           <Route path="/support" element={<SupportPage />} />
-          <Route path="/privacy" element={<PrivacyPage />} />
+          <Route path="/privacy" element={<AppPrivacyPage />} />
+          <Route path="/legal/:app/privacy" element={<AppPrivacyPage />} />
           <Route path="/terms" element={<TermsPage />} />
         </Routes>
       </Suspense>
