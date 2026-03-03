@@ -81,7 +81,7 @@ export const siteContent = {
   hero: {
     primaryCta: {
       label: 'Download on Play Store',
-      href: 'https://play.google.com/store/apps/details?id=com.axiomplay.weighsnap'
+      href: 'https://play.google.com/store/apps/details?id=com.axiomplaystudios.weighsnap'
     },
     secondaryCta: { label: 'Explore WeighSnap', href: '/projects/weighsnap' }
   },
@@ -96,7 +96,7 @@ export const siteContent = {
         oneLiner: 'Track weight trends in seconds with a clean, calm, and focused workflow.',
         overview:
           'WeighSnap helps people build consistency with simple weight logging, trend clarity, and progress visibility that stays useful over time. The interface is intentionally minimal so users can log fast and stay focused on habits, not friction.',
-        playStoreUrl: 'https://play.google.com/store/apps/details?id=com.axiomplay.weighsnap',
+        playStoreUrl: 'https://play.google.com/store/apps/details?id=com.axiomplaystudios.weighsnap',
         heroImage: '/images/weighsnap/weighsnap-hero.svg',
         screenshots: [
           '/images/weighsnap/weighsnap-screen-01.svg',
@@ -174,7 +174,7 @@ export const siteContent = {
         platforms: ['Android'],
         coverImage: '/images/weighsnap/weighsnap-hero.svg',
         storeLinks: {
-          googlePlay: 'https://play.google.com/store/apps/details?id=com.axiomplay.weighsnap'
+          googlePlay: 'https://play.google.com/store/apps/details?id=com.axiomplaystudios.weighsnap'
         },
         details: {
           summary:

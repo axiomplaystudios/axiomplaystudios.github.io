@@ -38,6 +38,13 @@ All copy, links, and game data live in `src/content/siteContent.ts`.
 - Update contact details in `siteContent.contact`.
 - Update Privacy/Terms content in `siteContent.legal`.
 
+## WeighSnap Release Metadata
+- Android package: `com.axiomplaystudios.weighsnap`
+- Play Store URL: `https://play.google.com/store/apps/details?id=com.axiomplaystudios.weighsnap`
+- Developer website URL: `https://axiomplaystudios.github.io/projects/weighsnap`
+- When production AdMob is ready, publish `public/app-ads.txt` so it serves at `https://axiomplaystudios.github.io/app-ads.txt`.
+- Do not add placeholder `app-ads.txt` content; use the AdMob-provided seller line only.
+
 ## Press Kit Assets
 Assets are stored locally in `public/press-kit/`:
 - `logo-pack.zip`
