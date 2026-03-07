@@ -132,7 +132,7 @@ export const siteContent = {
           },
           {
             question: 'How do I contact support?',
-            answer: 'Use support@axiomplaystudios.com and include your device model and app version.'
+            answer: 'Use axiomplaystudios@gmail.com and include your device model and app version.'
           }
         ],
         changelog: [
@@ -154,7 +154,7 @@ export const siteContent = {
             ]
           }
         ],
-        supportEmail: 'support@axiomplaystudios.com',
+        supportEmail: 'axiomplaystudios@gmail.com',
         reviewQuote: {
           quote: 'Simple, fast, and exactly what daily tracking should feel like.',
           source: 'Early user feedback'
@@ -255,7 +255,7 @@ export const siteContent = {
   support: {
     title: 'Support',
     subtitle: 'Need help with WeighSnap? We respond quickly with practical guidance.',
-    email: 'support@axiomplaystudios.com',
+    email: 'axiomplaystudios@gmail.com',
     faq: [
       'Include your Android version and app version in your message.',
       'For billing issues, include your Play Store order details.',

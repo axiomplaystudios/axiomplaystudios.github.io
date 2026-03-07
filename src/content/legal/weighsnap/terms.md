@@ -1,16 +1,16 @@
-# WeighSnap Terms of Service
+# WeighSnap: Weight Tracker Terms of Service
 
 Effective date: March 3, 2026
 
-Last updated: March 3, 2026
+Last updated: March 7, 2026
 
 ## 1. Acceptance of Terms
 
-By downloading, installing, or using WeighSnap (the "App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App.
+By downloading, installing, or using WeighSnap: Weight Tracker (the "App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App.
 
 ## 2. Description of Service
 
-WeighSnap is an Android application available via Google Play that helps users track body weight measurements, view trends and analytics, and export data. Optional features include ads, a one-time "Remove Ads" purchase, Google Drive backup, Health Connect sync, and in-app feedback. The App is provided by axiomplaystudios ("we", "us", or "our").
+WeighSnap: Weight Tracker is an Android application available via Google Play that helps users track body weight measurements, view trends and analytics, and export data. Optional features include ads, a one-time "Remove Ads" purchase, Google Drive backup, Health Connect sync, and in-app feedback. The App is provided by axiomplaystudios ("we", "us", or "our").
 
 ## 3. Eligibility
 
@@ -135,4 +135,4 @@ BY USING THE APP, YOU ACKNOWLEDGE THAT YOU HAVE READ THESE TERMS, UNDERSTAND THE
 
 Thank you for using WeighSnap!
 
-WeighSnap (Developer: axiomplaystudios)
+WeighSnap: Weight Tracker (Developer: axiomplaystudios)

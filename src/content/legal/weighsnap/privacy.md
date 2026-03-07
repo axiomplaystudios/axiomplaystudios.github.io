@@ -1,10 +1,10 @@
-# WeighSnap Privacy Policy
+# WeighSnap: Weight Tracker Privacy Policy
 
 Effective date: February 11, 2026
-Last updated: March 3, 2026
+Last updated: March 7, 2026
 
 ## 1. Overview
-WeighSnap ("we", "our", or "us") is a mobile application that helps you record and track body weight and related health metrics. The app does not require an account, and most data is stored locally on your device by default. We collect (a) data you enter, (b) data needed for optional features you enable (such as ads, cloud backup, health sync, and in-app purchases), and (c) limited automatic usage, crash, and performance data in Android release builds. If you submit feedback in the app, we collect your message, optional email address, and limited app/device/profile context to help us respond and troubleshoot; this feedback is stored in Cloud Firestore (Google). WeighSnap is currently available only on Android via Google Play. If we add other platforms, we will update this policy. This Privacy Policy explains what data we collect, how we use it, and the choices you have.
+WeighSnap: Weight Tracker ("WeighSnap", "we", "our", or "us") is a mobile application that helps you record and track body weight and related health metrics. The app does not require an account, and most data is stored locally on your device by default. We collect (a) data you enter, (b) data needed for optional features you enable (such as ads, cloud backup, health sync, and in-app purchases), and (c) limited automatic usage, crash, and performance data in Android release builds. If you submit feedback in the app, we collect your message, optional email address, and limited app/device/profile context to help us respond and troubleshoot; this feedback is stored in Cloud Firestore (Google). WeighSnap is currently available only on Android via Google Play. If we add other platforms, we will update this policy. This Privacy Policy explains what data we collect, how we use it, and the choices you have.
 
 ## 2. Who We Are / Contact
 Developer: axiomplaystudios
@@ -115,7 +115,7 @@ Depending on where you live, you may also have additional rights (such as the ri
 - Purchase records, ad measurement data, and consent logs may be retained by their respective providers (Google Play Billing, Google Mobile Ads/UMP) under their policies.
 
 ## 9. Security
-We use reasonable safeguards to protect data, including secure storage for PIN hashes and encrypted network connections for data sent over the internet. No method of storage or transmission is 100% secure.
+We use reasonable safeguards to protect data, including secure storage for PIN hashes and app sandbox protections. When data is sent to third-party services, it is handled under their standard security and transport protections. No method of storage or transmission is 100% secure.
 
 ## 10. Children's Privacy
 WeighSnap is not intended for children, and the minimum age to use the app is 13 (or the minimum age required in your jurisdiction). We do not knowingly collect personal information from children.
