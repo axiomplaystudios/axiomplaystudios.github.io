@@ -48,6 +48,6 @@ Please include:
 
 ## Related Links
 
-- Privacy policy: `https://axiomplaystudios.github.io/projects/weighsnap/privacy`
-- Terms of service: `https://axiomplaystudios.github.io/projects/weighsnap/terms`
+- Privacy policy: `https://axiomplaystudios.github.io/projects/weighsnap/privacy/`
+- Terms of service: `https://axiomplaystudios.github.io/projects/weighsnap/terms/`
 - Play Store title: `WeighSnap: Weight Tracker`

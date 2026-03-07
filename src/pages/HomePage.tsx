@@ -29,7 +29,7 @@ const HomePage = () => {
             <p className={styles.lead}>{siteContent.brand.intro}</p>
             <div className={styles.heroActions}>
               <ButtonLink href="#projects">View Projects</ButtonLink>
-              <ButtonLink href="/support" variant="secondary">Contact Studio</ButtonLink>
+              <ButtonLink href="/support/" variant="secondary">Contact Studio</ButtonLink>
             </div>
           </Reveal>
           <Reveal delay={120} className={styles.heroVisual}>

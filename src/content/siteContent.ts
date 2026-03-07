@@ -75,8 +75,8 @@ export const siteContent = {
     { id: 'home', label: 'Home', href: '#home' },
     { id: 'projects', label: 'Projects', href: '#projects' },
     { id: 'studio', label: 'Studio', href: '#studio' },
-    { id: 'support', label: 'Support', href: '/support' },
-    { id: 'legal', label: 'WeighSnap Privacy Policy', href: '/projects/weighsnap/privacy' }
+    { id: 'support', label: 'Support', href: '/support/' },
+    { id: 'legal', label: 'WeighSnap Privacy Policy', href: '/projects/weighsnap/privacy/' }
   ],
   hero: {
     primaryCta: {
@@ -313,17 +313,17 @@ export const siteContent = {
   },
   footer: {
     copyright: `Copyright ${new Date().getFullYear()} Axiomplay Studios. All rights reserved.`,
-    privacyHref: '/projects/weighsnap/privacy',
-    termsHref: '/projects/weighsnap/terms',
+    privacyHref: '/projects/weighsnap/privacy/',
+    termsHref: '/projects/weighsnap/terms/',
     studioLinks: [
       { label: 'About', href: '#studio' },
       { label: 'WeighSnap', href: '/projects/weighsnap' },
-      { label: 'Support', href: '/support' }
+      { label: 'Support', href: '/support/' }
     ],
     legalLinks: [
-      { label: 'WeighSnap Privacy Policy', href: '/projects/weighsnap/privacy' },
-      { label: 'WeighSnap Terms of Service', href: '/projects/weighsnap/terms' },
-      { label: 'Cookie Policy', href: '/projects/weighsnap/privacy' }
+      { label: 'WeighSnap Privacy Policy', href: '/projects/weighsnap/privacy/' },
+      { label: 'WeighSnap Terms of Service', href: '/projects/weighsnap/terms/' },
+      { label: 'Cookie Policy', href: '/projects/weighsnap/privacy/' }
     ],
     connectLinks: [
       { label: 'Twitter', href: 'https://twitter.com' },

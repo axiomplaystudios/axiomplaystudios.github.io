@@ -20,7 +20,7 @@ You must be at least 13 years old to use this App. By using the App, you represe
 
 - The App does not require an account. Most data is stored locally on your device by default.
 - You are responsible for maintaining the confidentiality of any data you enter and for securing access to your device.
-- Optional features (such as Google Drive backup, Health Connect sync, and in-app feedback) may transmit data as described in our Privacy Policy: https://axiomplaystudios.github.io/projects/weighsnap/privacy.
+- Optional features (such as Google Drive backup, Health Connect sync, and in-app feedback) may transmit data as described in our Privacy Policy: https://axiomplaystudios.github.io/projects/weighsnap/privacy/.
 
 ## 5. Acceptable Use
 
@@ -49,7 +49,7 @@ The App and its original content, features, and functionality are owned by axiom
 
 - You retain all rights to the data you enter into the App (weight entries, notes, etc.).
 - By using the App, you grant us a limited license to use, store, and process your data solely to provide the App's functionality.
-- We will not share, sell, or use your personal data for purposes other than as described in our Privacy Policy: https://axiomplaystudios.github.io/projects/weighsnap/privacy.
+- We will not share, sell, or use your personal data for purposes other than as described in our Privacy Policy: https://axiomplaystudios.github.io/projects/weighsnap/privacy/.
 
 ## 9. In-App Purchases and Ads
 
@@ -117,7 +117,7 @@ If any provision of these Terms is held to be unenforceable or invalid, such pro
 
 ## 18. Entire Agreement
 
-These Terms, together with our Privacy Policy (https://axiomplaystudios.github.io/projects/weighsnap/privacy), constitute the entire agreement between you and axiomplaystudios regarding the App and supersede all prior agreements and understandings.
+These Terms, together with our Privacy Policy (https://axiomplaystudios.github.io/projects/weighsnap/privacy/), constitute the entire agreement between you and axiomplaystudios regarding the App and supersede all prior agreements and understandings.
 
 ## 19. Contact Information
 

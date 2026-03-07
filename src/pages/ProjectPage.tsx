@@ -44,8 +44,8 @@ const ProjectPage = () => {
               <ButtonLink href="#faq" variant="secondary">
                 View FAQ
               </ButtonLink>
-              <ButtonLink href={`/projects/${project.slug}/privacy`} variant="secondary">Privacy Policy</ButtonLink>
-              <ButtonLink href={`/projects/${project.slug}/terms`} variant="secondary">Terms of Service</ButtonLink>
+              <ButtonLink href={`/projects/${project.slug}/privacy/`} variant="secondary">Privacy Policy</ButtonLink>
+              <ButtonLink href={`/projects/${project.slug}/terms/`} variant="secondary">Terms of Service</ButtonLink>
             </div>
           </div>
           <div className={styles.heroMedia}>
@@ -152,9 +152,9 @@ const ProjectPage = () => {
           <h2>Support and Legal</h2>
           <div className={styles.quickLinks}>
             <a href={`mailto:${project.supportEmail}`}>{project.supportEmail}</a>
-            <a href="/support">Support page</a>
-            <a href={`/projects/${project.slug}/privacy`}>Privacy policy</a>
-            <a href={`/projects/${project.slug}/terms`}>Terms of service</a>
+            <a href="/support/">Support page</a>
+            <a href={`/projects/${project.slug}/privacy/`}>Privacy policy</a>
+            <a href={`/projects/${project.slug}/terms/`}>Terms of service</a>
           </div>
         </div>
       </section>

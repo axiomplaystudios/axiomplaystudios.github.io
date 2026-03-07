@@ -3,22 +3,22 @@
   "pages": [
     {
       "id": "support",
-      "path": "/support",
-      "canonicalUrl": "https://axiomplaystudios.github.io/support",
+      "path": "/support/",
+      "canonicalUrl": "https://axiomplaystudios.github.io/support/",
       "title": "WeighSnap Support",
       "sourcePath": "src/content/support/weighsnap.md"
     },
     {
       "id": "privacy",
-      "path": "/projects/weighsnap/privacy",
-      "canonicalUrl": "https://axiomplaystudios.github.io/projects/weighsnap/privacy",
+      "path": "/projects/weighsnap/privacy/",
+      "canonicalUrl": "https://axiomplaystudios.github.io/projects/weighsnap/privacy/",
       "title": "WeighSnap: Weight Tracker Privacy Policy",
       "sourcePath": "src/content/legal/weighsnap/privacy.md"
     },
     {
       "id": "terms",
-      "path": "/projects/weighsnap/terms",
-      "canonicalUrl": "https://axiomplaystudios.github.io/projects/weighsnap/terms",
+      "path": "/projects/weighsnap/terms/",
+      "canonicalUrl": "https://axiomplaystudios.github.io/projects/weighsnap/terms/",
       "title": "WeighSnap: Weight Tracker Terms of Service",
       "sourcePath": "src/content/legal/weighsnap/terms.md"
     }
