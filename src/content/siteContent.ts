@@ -252,16 +252,6 @@ export const siteContent = {
     ],
     pressContact: 'press@axiomplaystudios.com'
   },
-  support: {
-    title: 'Support',
-    subtitle: 'Need help with WeighSnap? We respond quickly with practical guidance.',
-    email: 'axiomplaystudios@gmail.com',
-    faq: [
-      'Include your Android version and app version in your message.',
-      'For billing issues, include your Play Store order details.',
-      'For bugs, include reproducible steps and screenshots when possible.'
-    ]
-  },
   contact: {
     title: 'Let us build something focused.',
     subtitle: 'For press, partnerships, or studio inquiries, contact us anytime.',

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { siteContent } from '../content/siteContent';
+import { isHostedPagePath } from '../utils/hostedPagePaths';
 import Logo from './Logo';
 import styles from './Footer.module.css';
 
@@ -19,6 +20,10 @@ const FooterLink = ({ item }: { item: FooterLinkItem }) => {
         {item.label}
       </a>
     );
+  }
+
+  if (isHostedPagePath(item.href)) {
+    return <a href={item.href}>{item.label}</a>;
   }
 
   if (item.href.startsWith('#')) {

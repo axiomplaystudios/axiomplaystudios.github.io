@@ -1,13 +1,10 @@
-import weighsnapPrivacy from './weighsnap/privacy.md?raw';
-import weighsnapTerms from './weighsnap/terms.md?raw';
-
 export const featuredAppSlug = 'weighsnap';
 
 export const appLegalBySlug = {
   weighsnap: {
     appName: 'WeighSnap',
-    privacyMarkdown: weighsnapPrivacy,
-    termsMarkdown: weighsnapTerms
+    privacyPath: '/projects/weighsnap/privacy',
+    termsPath: '/projects/weighsnap/terms'
   }
 } as const;
 

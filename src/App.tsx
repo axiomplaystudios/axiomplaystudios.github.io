@@ -10,7 +10,6 @@ import HomePage from './pages/HomePage';
 
 const AppPrivacyPage = lazy(() => import('./pages/AppPrivacyPage'));
 const AppTermsPage = lazy(() => import('./pages/AppTermsPage'));
-const SupportPage = lazy(() => import('./pages/SupportPage'));
 const ProjectPage = lazy(() => import('./pages/ProjectPage'));
 
 const LoadingFallback = () => (
@@ -33,9 +32,6 @@ const App = () => (
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/projects/:projectId" element={<ProjectPage />} />
-          <Route path="/projects/:projectId/privacy" element={<AppPrivacyPage />} />
-          <Route path="/projects/:projectId/terms" element={<AppTermsPage />} />
-          <Route path="/support" element={<SupportPage />} />
           <Route path="/privacy" element={<AppPrivacyPage />} />
           <Route path="/legal/:app/privacy" element={<AppPrivacyPage />} />
           <Route path="/terms" element={<AppTermsPage />} />

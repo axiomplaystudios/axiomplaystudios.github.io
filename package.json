@@ -4,8 +4,9 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -p tsconfig.app.json && vite build",
+    "generate:hosted-pages": "node scripts/generate-hosted-pages.mjs",
+    "dev": "npm run generate:hosted-pages && vite",
+    "build": "npm run generate:hosted-pages && tsc -p tsconfig.app.json && vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .ts,.tsx",
     "format": "prettier --write .",

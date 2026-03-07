@@ -1,29 +1,24 @@
 import { useEffect } from 'react';
-import { Navigate, useParams } from 'react-router-dom';
-import LegalMarkdownLayout from '../components/LegalMarkdownLayout';
+import { useParams } from 'react-router-dom';
 import { appLegalBySlug, featuredAppSlug, type AppSlug } from '../content/legal/appLegal';
 
 const AppTermsPage = () => {
-  const { projectId, app } = useParams();
-  const slug = (projectId ?? app ?? featuredAppSlug) as AppSlug;
-  const entry = appLegalBySlug[slug];
-  const featuredTermsPath = `/projects/${featuredAppSlug}/terms`;
+  const { app } = useParams();
+  const slug = (app ?? featuredAppSlug) as AppSlug;
+  const entry = appLegalBySlug[slug] ?? appLegalBySlug[featuredAppSlug];
 
   useEffect(() => {
-    if (entry) {
-      document.title = `Terms of Service | ${entry.appName}`;
-    }
+    document.title = `Redirecting | ${entry.appName}`;
+    window.location.replace(entry.termsPath);
   }, [entry]);
 
-  if (!entry) {
-    return <Navigate to={featuredTermsPath} replace />;
-  }
-
-  if (!projectId) {
-    return <Navigate to={`/projects/${slug}/terms`} replace />;
-  }
-
-  return <LegalMarkdownLayout markdown={entry.termsMarkdown} />;
+  return (
+    <section className="section">
+      <div className="container">
+        <p>Redirecting to the canonical terms page...</p>
+      </div>
+    </section>
+  );
 };
 
 export default AppTermsPage;

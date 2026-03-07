@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { siteContent } from '../content/siteContent';
 import { useScrollSpy } from '../hooks/useScrollSpy';
 import { useTheme } from '../hooks/useTheme';
+import { isHostedPagePath } from '../utils/hostedPagePaths';
 import Logo from './Logo';
 import ThemeToggle from './ThemeToggle';
 import styles from './Navbar.module.css';
@@ -45,10 +46,24 @@ const Navbar = () => {
           <div className={styles.links}>
             {siteContent.nav.map((item) => {
               const isHashLink = item.href.startsWith('#');
+              const isHostedPageLink = isHostedPagePath(item.href);
               const isActive = isHashLink
                 ? isHome && activeSection === item.id
-                : location.pathname === item.href;
+                : !isHostedPageLink && location.pathname === item.href;
               const destination = isHashLink ? { pathname: '/', hash: item.href } : item.href;
+
+              if (isHostedPageLink) {
+                return (
+                  <a
+                    key={item.id}
+                    className={styles.link}
+                    href={item.href}
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {item.label}
+                  </a>
+                );
+              }
 
               return (
                 <Link
@@ -100,6 +115,19 @@ const Navbar = () => {
       >
         <div className={styles.mobilePanel}>
           {siteContent.nav.map((item) => {
+            if (isHostedPagePath(item.href)) {
+              return (
+                <a
+                  key={item.id}
+                  className={styles.mobileLink}
+                  href={item.href}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {item.label}
+                </a>
+              );
+            }
+
             const destination = item.href.startsWith('#') ? { pathname: '/', hash: item.href } : item.href;
 
             return (

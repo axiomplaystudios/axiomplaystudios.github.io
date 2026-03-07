@@ -1,6 +1,6 @@
 import { useEffect, useMemo } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { ButtonLink, ButtonRouteLink } from '../components/Button';
+import { ButtonLink } from '../components/Button';
 import { siteContent } from '../content/siteContent';
 import styles from './ProjectPage.module.css';
 
@@ -44,12 +44,8 @@ const ProjectPage = () => {
               <ButtonLink href="#faq" variant="secondary">
                 View FAQ
               </ButtonLink>
-              <ButtonRouteLink to={`/projects/${project.slug}/privacy`} variant="secondary">
-                Privacy Policy
-              </ButtonRouteLink>
-              <ButtonRouteLink to={`/projects/${project.slug}/terms`} variant="secondary">
-                Terms of Service
-              </ButtonRouteLink>
+              <ButtonLink href={`/projects/${project.slug}/privacy`} variant="secondary">Privacy Policy</ButtonLink>
+              <ButtonLink href={`/projects/${project.slug}/terms`} variant="secondary">Terms of Service</ButtonLink>
             </div>
           </div>
           <div className={styles.heroMedia}>
@@ -156,9 +152,9 @@ const ProjectPage = () => {
           <h2>Support and Legal</h2>
           <div className={styles.quickLinks}>
             <a href={`mailto:${project.supportEmail}`}>{project.supportEmail}</a>
-            <Link to="/support">Support page</Link>
-            <Link to={`/projects/${project.slug}/privacy`}>Privacy policy</Link>
-            <Link to={`/projects/${project.slug}/terms`}>Terms of service</Link>
+            <a href="/support">Support page</a>
+            <a href={`/projects/${project.slug}/privacy`}>Privacy policy</a>
+            <a href={`/projects/${project.slug}/terms`}>Terms of service</a>
           </div>
         </div>
       </section>
