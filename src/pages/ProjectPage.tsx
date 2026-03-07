@@ -1,6 +1,6 @@
 import { useEffect, useMemo } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { ButtonLink } from '../components/Button';
+import { ButtonLink, ButtonRouteLink } from '../components/Button';
 import { siteContent } from '../content/siteContent';
 import styles from './ProjectPage.module.css';
 
@@ -44,12 +44,12 @@ const ProjectPage = () => {
               <ButtonLink href="#faq" variant="secondary">
                 View FAQ
               </ButtonLink>
-              <ButtonLink href={`/projects/${project.slug}/privacy`} variant="secondary">
+              <ButtonRouteLink to={`/projects/${project.slug}/privacy`} variant="secondary">
                 Privacy Policy
-              </ButtonLink>
-              <ButtonLink href={`/projects/${project.slug}/terms`} variant="secondary">
+              </ButtonRouteLink>
+              <ButtonRouteLink to={`/projects/${project.slug}/terms`} variant="secondary">
                 Terms of Service
-              </ButtonLink>
+              </ButtonRouteLink>
             </div>
           </div>
           <div className={styles.heroMedia}>

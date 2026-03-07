@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ButtonLink } from '../components/Button';
+import { ButtonLink, ButtonRouteLink } from '../components/Button';
 import Reveal from '../components/Reveal';
 import { siteContent } from '../content/siteContent';
 import styles from './HomePage.module.css';
@@ -29,9 +29,9 @@ const HomePage = () => {
             <p className={styles.lead}>{siteContent.brand.intro}</p>
             <div className={styles.heroActions}>
               <ButtonLink href="#projects">View Projects</ButtonLink>
-              <ButtonLink href="/support" variant="secondary">
+              <ButtonRouteLink to="/support" variant="secondary">
                 Contact Studio
-              </ButtonLink>
+              </ButtonRouteLink>
             </div>
           </Reveal>
           <Reveal delay={120} className={styles.heroVisual}>
@@ -89,7 +89,7 @@ const HomePage = () => {
         <div className={`container ${styles.finalInner}`}>
           <h2>Discover each project in its own dedicated space.</h2>
           <p>Browse project pages for screenshots, feature deep dives, changelogs, and support details.</p>
-          <ButtonLink href={`/projects/${featuredProject.slug}`}>Open Project Page</ButtonLink>
+          <ButtonRouteLink to={`/projects/${featuredProject.slug}`}>Open Project Page</ButtonRouteLink>
         </div>
       </section>
     </>

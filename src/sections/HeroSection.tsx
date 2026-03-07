@@ -1,5 +1,5 @@
 import { siteContent } from '../content/siteContent';
-import { ButtonLink } from '../components/Button';
+import { ButtonLink, ButtonRouteLink } from '../components/Button';
 import Reveal from '../components/Reveal';
 import styles from './HeroSection.module.css';
 
@@ -22,9 +22,9 @@ const HeroSection = () => (
         <Reveal delay={280}>
           <div className={styles.actions}>
             <ButtonLink href={siteContent.hero.primaryCta.href}>{siteContent.hero.primaryCta.label}</ButtonLink>
-            <ButtonLink href={siteContent.hero.secondaryCta.href} variant="secondary">
+            <ButtonRouteLink to={siteContent.hero.secondaryCta.href} variant="secondary">
               {siteContent.hero.secondaryCta.label}
-            </ButtonLink>
+            </ButtonRouteLink>
           </div>
         </Reveal>
         <div className={styles.highlights}>
