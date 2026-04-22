@@ -45,14 +45,18 @@
   border: 1px solid var(--border);
   border-radius: 24px;
   background: color-mix(in srgb, var(--color-surface) 92%, transparent);
-  padding: 1.2rem;
+  padding: 0.75rem;
   box-shadow: 0 24px 64px rgba(var(--glow), 0.25);
   animation: float-card 8s ease-in-out infinite;
+  overflow: hidden;
 }
 
-.heroVisual img {
+.heroHeader {
   width: 100%;
+  aspect-ratio: 16 / 9;
   display: block;
+  border-radius: 20px;
+  object-fit: cover;
 }
 
 .featuredTag {
@@ -91,7 +95,9 @@
   border-radius: 16px;
   padding: 1rem;
   background: color-mix(in srgb, var(--color-surface) 94%, transparent);
-  transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1), border-color 260ms ease;
+  transition:
+    transform 260ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 260ms ease;
 }
 
 .valueCard:hover {
@@ -138,7 +144,9 @@
   border-radius: 16px;
   padding: 1rem;
   background: color-mix(in srgb, var(--color-surface) 94%, transparent);
-  transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1), border-color 260ms ease;
+  transition:
+    transform 260ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 260ms ease;
 }
 
 .projectCard:hover {

@@ -96,7 +96,8 @@ export const siteContent = {
         oneLiner: 'Track weight trends in seconds with a clean, calm, and focused workflow.',
         overview:
           'WeighSnap helps people build consistency with simple weight logging, trend clarity, and progress visibility that stays useful over time. The interface is intentionally minimal so users can log fast and stay focused on habits, not friction.',
-        playStoreUrl: 'https://play.google.com/store/apps/details?id=com.axiomplaystudios.weighsnap',
+        playStoreUrl:
+          'https://play.google.com/store/apps/details?id=com.axiomplaystudios.weighsnap',
         heroImage: '/images/weighsnap/weighsnap-hero.svg',
         screenshots: [
           '/images/weighsnap/weighsnap-screen-01.svg',
@@ -230,9 +231,14 @@ export const siteContent = {
     brandColors: ['#0b1220', '#111a2e', '#2c6bff', '#61c7ff', '#f5f8ff'],
     downloads: [
       {
-        title: 'Brand logo lockup',
-        description: 'Primary horizontal logo lockup.',
-        href: '/brand/logo-lockup-dark.svg'
+        title: 'Brand logo',
+        description: 'Primary square studio logo mark.',
+        href: '/brand/axiomplay-studios-logo.png'
+      },
+      {
+        title: 'Brand header image',
+        description: 'Wide studio header artwork for website and media use.',
+        href: '/brand/axiomplay-studios-header.jpg'
       },
       {
         title: 'Brand colors',
@@ -272,18 +278,15 @@ export const siteContent = {
       sections: [
         {
           heading: 'Information we collect',
-          body:
-            'We collect only data required to operate WeighSnap and this website, such as app usage analytics, device identifiers, and support information that you provide voluntarily.'
+          body: 'We collect only data required to operate WeighSnap and this website, such as app usage analytics, device identifiers, and support information that you provide voluntarily.'
         },
         {
           heading: 'How we use data',
-          body:
-            'Data is used to improve app quality, resolve issues, and respond to support requests.'
+          body: 'Data is used to improve app quality, resolve issues, and respond to support requests.'
         },
         {
           heading: 'Your choices',
-          body:
-            'You can request support-data deletion and opt out of non-essential analytics where available.'
+          body: 'You can request support-data deletion and opt out of non-essential analytics where available.'
         }
       ]
     },
@@ -295,18 +298,15 @@ export const siteContent = {
       sections: [
         {
           heading: 'Acceptable use',
-          body:
-            'You agree not to misuse the service, reverse engineer application binaries, or disrupt service availability.'
+          body: 'You agree not to misuse the service, reverse engineer application binaries, or disrupt service availability.'
         },
         {
           heading: 'Content ownership',
-          body:
-            'All brand and app materials remain the property of Axiomplay Studios. Usage is limited to personal, non-transferable access.'
+          body: 'All brand and app materials remain the property of Axiomplay Studios. Usage is limited to personal, non-transferable access.'
         },
         {
           heading: 'Service updates',
-          body:
-            'We may modify or discontinue features in order to improve reliability, security, or product quality.'
+          body: 'We may modify or discontinue features in order to improve reliability, security, or product quality.'
         }
       ]
     }

@@ -29,11 +29,19 @@ const HomePage = () => {
             <p className={styles.lead}>{siteContent.brand.intro}</p>
             <div className={styles.heroActions}>
               <ButtonLink href="#projects">View Projects</ButtonLink>
-              <ButtonLink href="/support/" variant="secondary">Contact Studio</ButtonLink>
+              <ButtonLink href="/support/" variant="secondary">
+                Contact Studio
+              </ButtonLink>
             </div>
           </Reveal>
           <Reveal delay={120} className={styles.heroVisual}>
-            <img src="/brand/logo-lockup-dark.svg" alt="Axiomplay Studios brand lockup" width={760} height={168} />
+            <img
+              className={styles.heroHeader}
+              src="/brand/axiomplay-studios-header.jpg"
+              alt="Axiomplay Studios header artwork"
+              width={4096}
+              height={2304}
+            />
           </Reveal>
         </div>
       </section>
@@ -64,8 +72,8 @@ const HomePage = () => {
             <p className={styles.featuredTag}>Projects</p>
             <h2>Project directory</h2>
             <p>
-              A scalable list of live products. Detailed feature and screenshot content belongs inside each
-              project page.
+              A scalable list of live products. Detailed feature and screenshot content belongs
+              inside each project page.
             </p>
           </header>
           <div className={styles.projectGrid}>
@@ -86,8 +94,13 @@ const HomePage = () => {
       <section className={`section ${styles.finalCta}`}>
         <div className={`container ${styles.finalInner}`}>
           <h2>Discover each project in its own dedicated space.</h2>
-          <p>Browse project pages for screenshots, feature deep dives, changelogs, and support details.</p>
-          <ButtonRouteLink to={`/projects/${featuredProject.slug}`}>Open Project Page</ButtonRouteLink>
+          <p>
+            Browse project pages for screenshots, feature deep dives, changelogs, and support
+            details.
+          </p>
+          <ButtonRouteLink to={`/projects/${featuredProject.slug}`}>
+            Open Project Page
+          </ButtonRouteLink>
         </div>
       </section>
     </>
