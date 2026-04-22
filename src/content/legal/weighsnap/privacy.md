@@ -1,7 +1,7 @@
 # WeighSnap: Weight Tracker Privacy Policy
 
 Effective date: February 11, 2026
-Last updated: March 7, 2026
+Last updated: March 18, 2026
 
 ## 1. Overview
 WeighSnap: Weight Tracker ("WeighSnap", "we", "our", or "us") is a mobile application that helps you record and track body weight and related health metrics. The app does not require an account, and most data is stored locally on your device by default. We collect (a) data you enter, (b) data needed for optional features you enable (such as ads, cloud backup, health sync, and in-app purchases), and (c) limited automatic usage, crash, and performance data in Android release builds. If you submit feedback in the app, we collect your message, optional email address, and limited app/device/profile context to help us respond and troubleshoot; this feedback is stored in Cloud Firestore (Google). WeighSnap is currently available only on Android via Google Play. If we add other platforms, we will update this policy. This Privacy Policy explains what data we collect, how we use it, and the choices you have.
@@ -40,6 +40,8 @@ WeighSnap uses the Google Mobile Ads SDK and Google's User Messaging Platform (U
 - Consent status/choices used to determine ad personalization where required by law.
 
 We present a consent form where required by law. Consent choices may be limited by the consent form configuration. If you purchase Remove Ads, the app skips initializing the Mobile Ads SDK.
+Where UMP requires a privacy-options re-entry point, you can open it from
+`Profile > Ad-free > Manage ad privacy choices`.
 
 ### F. Analytics, crash, and performance data (Firebase)
 On Android release builds only, WeighSnap uses Firebase Analytics, Crashlytics, and Performance. Collection is disabled in debug and test builds and on non-Android platforms. These services may collect:
@@ -101,7 +103,7 @@ If you are in the EEA, UK, or Switzerland, we process your data under legal base
 - If you wrote data to Health Connect, you may need to delete it there; the app may not be able to remove health records from that platform.
 - Sign out of Google and delete your backup from Google Drive.
 - Export your data to CSV and store or share it as you choose.
-- Control ad personalization through your device settings, reset the advertising ID, or remove ads via the in-app purchase.
+- Control ad personalization through your device settings, reset the advertising ID, use `Profile > Ad-free > Manage ad privacy choices` when available, or remove ads via the in-app purchase.
 - Analytics and diagnostic data collection is enabled only in Android release builds.
 - Contact us to request access, correction, or deletion of data (see Section 14).
 
@@ -124,7 +126,7 @@ WeighSnap is not intended for children, and the minimum age to use the app is 13
 Your data may be processed in countries other than your own when using third-party services (for example, Google). Those providers handle data under their own security and compliance frameworks.
 
 ## 12. Third-Party Links
-The app does not currently include third-party links. If we add them, those services will have their own privacy practices.
+The app may include links that open external services (for example, Google Play pages and our hosted policy/support pages). Those services have their own privacy practices.
 
 ## 13. Changes to This Policy
 We may update this policy from time to time. We will update the "Last updated" date, and may provide additional notice if required by law.
