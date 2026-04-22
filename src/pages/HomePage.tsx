@@ -23,6 +23,15 @@ const HomePage = () => {
     <>
       <section id="home" className={`section ${styles.hero}`}>
         <div className={`container ${styles.heroInner}`}>
+          <Reveal className={styles.heroVisual}>
+            <img
+              className={styles.heroHeader}
+              src="/brand/axiomplay-studios-header.jpg"
+              alt="Axiomplay Studios header artwork"
+              width={4096}
+              height={2304}
+            />
+          </Reveal>
           <Reveal className={styles.heroCopy}>
             <p className={styles.eyebrow}>{siteContent.brand.name}</p>
             <h1>{siteContent.brand.tagline}</h1>
@@ -33,15 +42,6 @@ const HomePage = () => {
                 Contact Studio
               </ButtonLink>
             </div>
-          </Reveal>
-          <Reveal delay={120} className={styles.heroVisual}>
-            <img
-              className={styles.heroHeader}
-              src="/brand/axiomplay-studios-header.jpg"
-              alt="Axiomplay Studios header artwork"
-              width={4096}
-              height={2304}
-            />
           </Reveal>
         </div>
       </section>
