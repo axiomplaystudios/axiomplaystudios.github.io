@@ -7,7 +7,7 @@ import ReactMarkdown from 'react-markdown';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, '..');
-const configPath = path.join(repoRoot, 'src/content/hosted-pages.json');
+const configPath = path.join(repoRoot, 'scripts/hosted-pages.config.json');
 
 const hostedPages = JSON.parse(await fs.readFile(configPath, 'utf8'));
 

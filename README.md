@@ -40,6 +40,7 @@ All copy, links, and game data live in `src/content/siteContent.ts`.
 
 ## WeighSnap Release Metadata
 - Android package: `com.axiomplaystudios.weighsnap`
+- Release status: `Live on Google Play`
 - Play Store URL: `https://play.google.com/store/apps/details?id=com.axiomplaystudios.weighsnap`
 - Developer website URL: `https://axiomplaystudios.github.io/projects/weighsnap`
 - When production AdMob is ready, publish `public/app-ads.txt` so it serves at `https://axiomplaystudios.github.io/app-ads.txt`.

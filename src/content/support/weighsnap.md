@@ -2,6 +2,8 @@
 
 Support email: [axiomplaystudios@gmail.com](mailto:axiomplaystudios@gmail.com)
 
+WeighSnap is now available on Google Play: https://play.google.com/store/apps/details?id=com.axiomplaystudios.weighsnap
+
 WeighSnap is a local-first weight tracker for Android. If you need help, contact support at the email above and include the app version, device model, Android version, and a short description of the issue.
 
 ## Common Support Topics
@@ -50,4 +52,5 @@ Please include:
 
 - Privacy policy: `https://axiomplaystudios.github.io/projects/weighsnap/privacy/`
 - Terms of service: `https://axiomplaystudios.github.io/projects/weighsnap/terms/`
+- Play Store app: `https://play.google.com/store/apps/details?id=com.axiomplaystudios.weighsnap`
 - Play Store title: `WeighSnap: Weight Tracker`

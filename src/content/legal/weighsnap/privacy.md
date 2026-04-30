@@ -1,10 +1,10 @@
 # WeighSnap: Weight Tracker Privacy Policy
 
 Effective date: February 11, 2026
-Last updated: March 18, 2026
+Last updated: April 30, 2026
 
 ## 1. Overview
-WeighSnap: Weight Tracker ("WeighSnap", "we", "our", or "us") is a mobile application that helps you record and track body weight and related health metrics. The app does not require an account, and most data is stored locally on your device by default. We collect (a) data you enter, (b) data needed for optional features you enable (such as ads, cloud backup, health sync, and in-app purchases), and (c) limited automatic usage, crash, and performance data in Android release builds. If you submit feedback in the app, we collect your message, optional email address, and limited app/device/profile context to help us respond and troubleshoot; this feedback is stored in Cloud Firestore (Google). WeighSnap is currently available only on Android via Google Play. If we add other platforms, we will update this policy. This Privacy Policy explains what data we collect, how we use it, and the choices you have.
+WeighSnap: Weight Tracker ("WeighSnap", "we", "our", or "us") is a mobile application that helps you record and track body weight and related health metrics. The app does not require an account, and most data is stored locally on your device by default. We collect (a) data you enter, (b) data needed for optional features you enable (such as ads, cloud backup, health sync, and in-app purchases), and (c) limited automatic usage, crash, and performance data in Android release builds. If you submit feedback in the app, we collect your message, optional email address, and limited app/device/profile context to help us respond and troubleshoot; this feedback is stored in Cloud Firestore (Google). WeighSnap is available on Android via Google Play: https://play.google.com/store/apps/details?id=com.axiomplaystudios.weighsnap. If we add other platforms, we will update this policy. This Privacy Policy explains what data we collect, how we use it, and the choices you have.
 
 ## 2. Who We Are / Contact
 Developer: axiomplaystudios
@@ -126,7 +126,7 @@ WeighSnap is not intended for children, and the minimum age to use the app is 13
 Your data may be processed in countries other than your own when using third-party services (for example, Google). Those providers handle data under their own security and compliance frameworks.
 
 ## 12. Third-Party Links
-The app may include links that open external services (for example, Google Play pages and our hosted policy/support pages). Those services have their own privacy practices.
+The app may include links that open external services (for example, WeighSnap on Google Play: https://play.google.com/store/apps/details?id=com.axiomplaystudios.weighsnap, and our hosted policy/support pages). Those services have their own privacy practices.
 
 ## 13. Changes to This Policy
 We may update this policy from time to time. We will update the "Last updated" date, and may provide additional notice if required by law.
