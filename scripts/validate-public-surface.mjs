@@ -26,6 +26,13 @@ const ensureNoSourcePathInClientJson = async () => {
 
 const ensureNoAbsoluteLocalPathsInDocs = async () => {
   const docsDir = path.join(repoRoot, 'docs');
+  try {
+    await fs.access(docsDir);
+  } catch {
+    // Directory doesn't exist, which is valid.
+    return;
+  }
+
   const stack = [docsDir];
   const localPathPattern = /(?:^|[\s`'"])(\/home\/[^\s`'"]+|[A-Za-z]:\\[^\s`'"]+)/m;
 
