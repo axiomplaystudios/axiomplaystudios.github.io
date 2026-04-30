@@ -2,7 +2,7 @@
 
 Effective date: March 3, 2026
 
-Last updated: March 7, 2026
+Last updated: April 30, 2026
 
 ## 1. Acceptance of Terms
 
