@@ -126,7 +126,7 @@ WeighSnap is not intended for children, and the minimum age to use the app is 13
 Your data may be processed in countries other than your own when using third-party services (for example, Google). Those providers handle data under their own security and compliance frameworks.
 
 ## 12. Third-Party Links
-The app may include links that open external services (for example, Google Play pages and our hosted policy/support pages). Those services have their own privacy practices.
+The app may include links that open external services (for example, WeighSnap on Google Play: https://play.google.com/store/apps/details?id=com.axiomplaystudios.weighsnap, and our hosted policy/support pages). Those services have their own privacy practices.
 
 ## 13. Changes to This Policy
 We may update this policy from time to time. We will update the "Last updated" date, and may provide additional notice if required by law.

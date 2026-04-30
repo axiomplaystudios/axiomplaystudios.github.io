@@ -50,4 +50,5 @@ Please include:
 
 - Privacy policy: `https://axiomplaystudios.github.io/projects/weighsnap/privacy/`
 - Terms of service: `https://axiomplaystudios.github.io/projects/weighsnap/terms/`
+- Play Store app: `https://play.google.com/store/apps/details?id=com.axiomplaystudios.weighsnap`
 - Play Store title: `WeighSnap: Weight Tracker`

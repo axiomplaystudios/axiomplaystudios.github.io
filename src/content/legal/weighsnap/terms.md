@@ -10,7 +10,7 @@ By downloading, installing, or using WeighSnap: Weight Tracker (the "App"), you 
 
 ## 2. Description of Service
 
-WeighSnap: Weight Tracker is an Android application available via Google Play that helps users track body weight measurements, view trends and analytics, and export data. Optional features include ads, a one-time "Remove Ads" purchase, Google Drive backup, Health Connect sync, and in-app feedback. The App is provided by axiomplaystudios ("we", "us", or "our").
+WeighSnap: Weight Tracker is an Android application available via Google Play (https://play.google.com/store/apps/details?id=com.axiomplaystudios.weighsnap) that helps users track body weight measurements, view trends and analytics, and export data. Optional features include ads, a one-time "Remove Ads" purchase, Google Drive backup, Health Connect sync, and in-app feedback. The App is provided by axiomplaystudios ("we", "us", or "our").
 
 ## 3. Eligibility
 
