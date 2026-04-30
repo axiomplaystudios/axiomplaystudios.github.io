@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "generate:hosted-pages": "node scripts/generate-hosted-pages.mjs",
+    "check:public-surface": "node scripts/validate-public-surface.mjs",
     "dev": "npm run generate:hosted-pages && vite",
-    "build": "npm run generate:hosted-pages && tsc -p tsconfig.app.json && vite build",
+    "build": "npm run check:public-surface && npm run generate:hosted-pages && tsc -p tsconfig.app.json && vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .ts,.tsx",
     "format": "prettier --write .",
