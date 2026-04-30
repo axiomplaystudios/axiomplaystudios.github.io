@@ -142,7 +142,7 @@ const Navbar = () => {
             );
           })}
           <div className={styles.mobileMeta}>
-            <p>Premium mobile experiences for Android and iOS.</p>
+            <p>Premium mobile experiences for Android.</p>
             <Link
               className={styles.mobileCta}
               to="/projects/weighsnap"

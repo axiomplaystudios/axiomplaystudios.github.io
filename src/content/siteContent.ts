@@ -263,10 +263,8 @@ export const siteContent = {
     subtitle: 'For press, partnerships, or studio inquiries, contact us anytime.',
     email: 'hello@axiomplaystudios.com',
     socials: [
-      { label: 'X / Twitter', href: 'https://twitter.com' },
-      { label: 'YouTube', href: 'https://www.youtube.com' },
-      { label: 'Discord', href: 'https://discord.com' },
-      { label: 'GitHub', href: 'https://github.com' }
+      { label: 'X / Twitter', href: 'https://twitter.com/axiomplaystudios' },
+      { label: 'LinkedIn', href: 'https://www.linkedin.com/company/axiomplaystudios' }
     ]
   },
   legal: {
@@ -326,9 +324,8 @@ export const siteContent = {
       { label: 'Cookie Policy', href: '/projects/weighsnap/privacy/' }
     ],
     connectLinks: [
-      { label: 'Twitter', href: 'https://twitter.com' },
-      { label: 'YouTube', href: 'https://www.youtube.com' },
-      { label: 'Discord', href: 'https://discord.com' },
+      { label: 'Twitter', href: 'https://twitter.com/axiomplaystudios' },
+      { label: 'LinkedIn', href: 'https://www.linkedin.com/company/axiomplaystudios' },
       { label: 'Email', href: 'mailto:hello@axiomplaystudios.com' }
     ]
   }
